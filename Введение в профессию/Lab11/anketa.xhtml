@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>Анкета</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Пожалуйста, ответьте на вопросы анкеты</h1>
+    <p class="form-class">
+    <form onsubmit="newSubmit()" id="form">
+        <p>
+            <label>
+                Как часто вы посещаете данный сайт?
+            </label>
+        <div>
+            <input id="1" type="radio" name="choice" checked="checked" />
+            <label for="1">Раз в день</label>
+        </div>
+        <div>
+            <input id="2" type="radio" name="choice" />
+            <label for="2">Раз в год</label>
+        </div>
+        <div>
+            <input id="3" type="radio" name="choice" />
+            <label for="3">Только зашел</label>
+        </div>
+        </p>
+        <p>
+            <label>
+                Выберите наиболее удчную модель Mazda
+            </label>
+            <p style="margin-left: 30px;">
+            <select>
+                <option value="1">MX-5</option>
+                <option value="2">MX-6</option>
+                <option value="3">RX-7</option>
+                <option value="4">RX-8</option>
+            </select>
+            <label>Другая</label>
+            <input type="text" />
+            </p>
+        </p>
+        <p>
+            <label>
+                Как вы оцениваете перспективы развития компании Mazda?
+            </label>
+            <p style="margin-left: 30px;">
+            <textarea style="min-width: 300px; min-height: 200px;"></textarea>
+        </p>
+        </p>
+        <p>
+            <label>
+                Оставьте свои данные для связи:
+            </label>
+            <table>
+                <tr>
+                    <th><label>Имя:</label></th>
+                    <th><input type="text" /></th> 
+                </tr>
+                <tr>
+                    <th><label>E-mail:</label></th>
+                    <th><input type="email" /></th>
+                </tr>
+                <tr>
+                    <th><label>Телефон:</label></th>
+                    <th><input type="tel" /></th>
+                </tr>
+                <tr>
+                    <th><label>Факс:</label></th>
+                    <th><input type="text" /></th>
+                </tr>
+            </table>
+            <p>
+                <input type="checkbox" />
+                <label>Включить рассылку материалов</label>
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+                <input type="button" onclick="cleanForm()" value="Очистить форму" />
+            </p>
+        </p>
+    </form>
+    </p>
+</body>
+<script>
+    function newSubmit(){
+       event.preventDefault();
+       alert("Форма отправлена");
+    }
+    function cleanForm(){
+        document.getElementById("form").reset();
+    }
+</script>
+</html>

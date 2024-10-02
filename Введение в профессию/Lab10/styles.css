@@ -1,0 +1,48 @@
+h1,h2{
+    color: blue;
+}
+body{
+    font-size: 16px;
+    text-align: inherit;
+}
+a{
+    text-decoration: dotted;
+}
+a:hover{
+    text-decoration: solid;
+}
+.form-class{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+input,textarea{
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #f8f8f8;
+    vertical-align: top;
+}
+textarea{
+    min-height: 150px;
+    min-width: 300px;
+    max-width: 600px;
+    max-height: 150px;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+tr,td{
+    border: 1px solid black;
+    text-align: justify;
+    text-wrap: wrap;
+    vertical-align: top;
+    padding: 10px;
+}
+.text-class{
+    text-indent: 20px;
+}

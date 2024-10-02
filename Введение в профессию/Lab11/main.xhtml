@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Пример страницы</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body id="body">
+  <h1 id="h1">Заголовок страницы</h1>
+  <p>Пример текста.</p>
+  <ul>
+    <li>Первый пункт списка</li>
+    <li>Второй пункт списка</li>
+  </ul>
+  <p id="p1">Первый абзац</p>
+  <p id="p2">Второй абзац</p>
+  <p id="p3">Третий абзац</p>
+
+  <a href="anketa.xhtml">Страница анкеты</a>
+  <script>
+    let body=document.getElementById('body');
+    body.style.backgroundColor="red";
+
+    let h1=document.getElementById('h1');
+    h1.onmouseover=changeColorBlue;
+    h1.onmouseout=changeColorRed;
+
+    function changeColorBlue(){
+        body.style.backgroundColor="blue";
+    }
+    function changeColorRed(){
+        body.style.backgroundColor="red";
+    }
+    
+    let p1=document.getElementById('p1');
+    let p2=document.getElementById('p2');
+    let p3=document.getElementById('p3');
+    p1.onmouseover=changePColorBlue;
+    p2.onmouseover=changePColorGreen;
+    p3.onmouseover=changePColorBlack;
+    p3.onmouseout=changePColorDefault;
+
+    function changePColorGreen(){
+        p2.style.backgroundColor="green";
+    }
+    function changePColorBlack(){
+        p3.style.backgroundColor="black";
+    }
+    function changePColorBlue(){
+        p1.style.backgroundColor="blue";
+    }
+    function changePColorDefault(){
+        p3.style.backgroundColor="";
+    }
+
+</script>
+</body>
+</html>
