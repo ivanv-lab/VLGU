@@ -1,0 +1,28 @@
+﻿@model List<Group>;
+
+<a asp-action="CreatePage" class="btn btn-primary">Добавить</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Наименование</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model!=null && Model.Count() != 0)
+        {
+            foreach(Group group in Model)
+            {
+                <tr>
+                    <td>@group.name</td>
+                    <td>@group.description</td>
+                    <td>
+                        <a asp-action="Delete" asp-controller="Group" asp-route-id="@group.id" class="btn btn-sm btn-danger">Удалить</a>
+                        <a asp-action="Details" asp-controller="Group" asp-route-id="@group.id" class="btn btn-sm btn-info">Подробно</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

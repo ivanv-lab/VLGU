@@ -1,0 +1,34 @@
+﻿@model List<Client>;
+
+<a asp-action="CreatePage" class="btn btn-primary">Добавить</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Наименование компании</th>
+            <th>Контактное лицо</th>
+            <th>Email</th>
+            <th>Номер телефона</th>
+            <th>Адрес</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count != 0)
+        {
+            foreach (Client client in Model)
+            {
+                <tr>
+                    <td>@client.companyName</td>
+                    <td>@client.contactPerson</td>
+                    <td>@client.email</td>
+                    <td>@client.phone</td>
+                    <td>@client.address</td>
+                    <td>
+                        <a asp-action="Delete" asp-controller="Clients" asp-route-id="@client.id" class="btn btn-sm btn-danger">Удалить</a>
+                        <a asp-action="Details" asp-route-id="@client.id" class="btn btn-sm btn-info">Подробно</a>
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+</table>

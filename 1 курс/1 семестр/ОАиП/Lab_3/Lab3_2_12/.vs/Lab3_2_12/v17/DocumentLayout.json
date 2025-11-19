@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\\u041E\u0410\u0438\u041F\\Lab_3\\Lab3_2_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{166D7B23-68D1-474C-AFFC-EBB2C440A38B}|Lab3_2_12\\Lab3_2_12.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\\u043E\u0430\u0438\u043F\\lab_3\\lab3_2_12\\lab3_2_12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{166D7B23-68D1-474C-AFFC-EBB2C440A38B}|Lab3_2_12\\Lab3_2_12.csproj|solutionrelative:lab3_2_12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\\u041E\u0410\u0438\u041F\\Lab_3\\Lab3_2_12\\Lab3_2_12\\Program.cs",
+              "RelativeDocumentMoniker": "Lab3_2_12\\Program.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\\u041E\u0410\u0438\u041F\\Lab_3\\Lab3_2_12\\Lab3_2_12\\Program.cs",
+              "RelativeToolTip": "Lab3_2_12\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T19:57:42.673Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

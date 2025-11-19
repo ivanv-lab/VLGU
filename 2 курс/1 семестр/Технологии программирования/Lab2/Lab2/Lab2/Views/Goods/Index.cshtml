@@ -1,0 +1,31 @@
+﻿@model List<Good>;
+
+<a asp-action="CreatePage" class="btn btn-primary">Добавить</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Товар</th>
+            <th>Описание</th>
+            <th>Кол-во</th>
+            <th>Цена</th>
+            <th>Рейтинг</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model!=null && Model.Count!=0)
+        foreach (Good good in Model)
+        {
+            <tr>
+                <td>"@good.Name"</td>
+                <td>@good.Description</td>
+                <td>@good.Count</td>
+                <td>@good.Price</td>
+                <td>@good.Raiting</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@good.Id" class="btn btn-sm btn-danger">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

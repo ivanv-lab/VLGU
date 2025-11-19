@@ -1,0 +1,54 @@
+﻿@model Lab6.Models.ViewModels.CreateTaskViewModel
+
+<h2>Создание задачи</h2>
+
+<form asp-action="Create" asp-controller="Tasks" method="post">
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group">
+        <label asp-for="@Model.task.title" class="control-label"></label>
+        <input asp-for="@Model.task.title" class="form-control" />
+        <span asp-validation-for="@Model.task.title" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.task.description" class="control-label"></label>
+        <input asp-for="@Model.task.description" class="form-control" />
+        <span asp-validation-for="@Model.task.description" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.task.deadline" class="control-label"></label>
+        <input asp-for="@Model.task.deadline" type="date" class="form-control" />
+        <span asp-validation-for="@Model.task.deadline" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.task.assignedTo" class="control-label"></label>
+        <input asp-for="@Model.task.assignedTo" class="form-control" />
+        <span asp-validation-for="@Model.task.assignedTo" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.status.name" class="control-label"></label>
+        <select asp-for="status.id" asp-items="@(new SelectList(Model.statuses, "id", "name"))"
+                class="form-control">
+            <option value="">Выберите статус</option>
+        </select>
+        <span asp-validation-for="status.id" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.campaign.name" class="control-label"></label>
+        <select asp-for="campaign.id" asp-items="@(new SelectList(Model.campaigns, "id", "name"))"
+                class="form-control">
+            <option value="">Выберите проект</option>
+        </select>
+        <span asp-validation-for="campaign.id" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-success">Создать</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </div>
+</form>

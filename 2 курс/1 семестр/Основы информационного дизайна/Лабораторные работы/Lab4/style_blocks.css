@@ -1,0 +1,114 @@
+* {
+    font-family: 'Trebuchet MS', 'Arial';
+    text-align: center;
+}
+
+header {
+    background-color: rgb(163, 168, 173);
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(163, 168, 173);
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    width: 76%;
+    display: inline-block;
+    background-color: rgb(163, 168, 173);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: rgb(202, 204, 207);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    background-color: rgb(145, 170, 194);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+aside {
+    width: 18%;
+    margin-right: -20px;
+    float: right;
+    background-color: rgb(163, 168, 173);
+    padding: 10px;
+}
+
+body {
+    width: 95%;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: rgb(163, 168, 173);
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+article ul {
+    list-style-type: none;
+}
+
+article li {
+    text-align: left;
+}
+
+article a {
+    color: green;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    background-color: rgb(202, 204, 207);
+    background-image: url("fruits.jpg");
+    background-size: 30%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border: 0px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(56, 199, 56);
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav ul li:hover {
+    padding: 5px;
+    border: 5px solid black;
+}

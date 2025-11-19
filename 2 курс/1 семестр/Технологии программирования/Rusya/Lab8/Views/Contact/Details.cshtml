@@ -1,0 +1,67 @@
+﻿@model Contact
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="card-title mb-0">
+                        <i class="fas fa-building"></i> Информация о контакте
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">ID:</dt>
+                                <dd class="col-sm-8">@Model.id</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.firstName):</dt>
+                                <dd class="col-sm-8">@Model.firstName</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.secondName):</dt>
+                                <dd class="col-sm-8">@Model.secondName</dd>
+                            </dls
+                        </div>
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.phone):</dt>
+                                <dd class="col-sm-8">@Model.phone</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.email):</dt>
+                                <dd class="col-sm-8">@Model.email</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <dt>@Html.DisplayNameFor(model => model.group.name):</dt>
+                            <dd>@Model.group.name</dd>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <dt>@Html.DisplayNameFor(model => model.group.description):</dt>
+                            <dd>@Model.group.description</dd>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group">
+                        <a asp-controller="Contact" asp-action="EditPage" asp-route-id="@Model.id"
+                           class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Редактировать
+                        </a>
+                        <a asp-controller="Contact" asp-action="Index"
+                           class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Назад к списку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

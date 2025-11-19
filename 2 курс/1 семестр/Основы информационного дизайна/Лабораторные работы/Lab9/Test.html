@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="score.js"></script>
+</head>
+
+<body>
+    <form id="test">
+        <div style="display: inline-block;">
+            <fieldset>
+                <legend>Создатель ЯП "Паскаль"(Pascal)</legend>
+                <p><label><input type="radio" name="creator">Блез Паскаль</label></p>
+                <p><label><input type="radio" name="creator" data-true="1">Никлаус Вирт</label></p>
+                <p><label><input type="radio" name="creator">Томас Курц и Джон Кемени</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Год начала Великой Отечественной Войны</legend>
+                <p><label><input type="radio" name="yeares"></label>1940</p>
+                <p><label><input type="radio" name="yeares" data-true="1">1941</label></p>
+                <p><label><input type="radio" name="yeares"></label>1939</p>
+            </fieldset>
+            <fieldset>
+                <legend>Кол-во каноничных смешариков</legend>
+                <p><label><input type="radio" name="count">10</label></p>
+                <p><label><input type="radio" name="count">8</label></p>
+                <p><label><input type="radio" name="count" data-true="1">9</label></p>
+            </fieldset>
+
+        </div>
+        <div style="display: inline-block;">
+            <fieldset>
+                <legend>С какой стороны Север</legend>
+                <p><label><input type="checkbox" name="check" data-true="1">С которой растет мох на дереве</label></p>
+                <p><label><input type="checkbox" name="check">С той, в которую наклонены деревья</label></p>
+                <p><label><input type="checkbox" name="check" data-true="1">С которой больше веток на дереве</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Виды сети</legend>
+                <p><label><input type="checkbox" name="check" data-true="1">Проводные</label></p>
+                <p><label><input type="checkbox" name="check">Полупроводные</label></p>
+                <p><label><input type="checkbox" name="check" data-true="1">Виртуальные</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Текстовые процессоры</legend>
+                <p><label><input type="checkbox" name="check" data-true="1">Microsoft Word</label></p>
+                <p><label><input type="checkbox" name="check">Блокнот</label></p>
+                <p><label><input type="checkbox" name="check" data-true="1">Notepad++</label></p>
+            </fieldset>
+        </div>
+        <br>
+        <p><label>Столица Франции</label><input type="text" name="text1" data-true="2" data-ans="Париж"></p>
+        <p><label>Животное - символ Австралии</label><input type="text" name="text2" data-true="2" data-ans="Кенгуру">
+        </p>
+        <p><label>Третья по счету планета от Солнца</label><input type="text" name="text3" data-true="2"
+                data-ans="Земля"></p>
+        <p><label>Висит груша - нельзя скушать</label><input type="text" name="text4" data-true="2" data-ans="Лампочка">
+        </p>
+    </form>
+    <button onClick="score();">Get the score!</button>
+</body>
+
+</html>

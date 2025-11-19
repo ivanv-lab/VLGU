@@ -1,0 +1,49 @@
+﻿@using Lab7.Models.ViewModels
+@model ContactCreateModel
+
+<h2>Редактирование контакта</h2>
+
+<form asp-action="Edit" asp-route-id="@Model.contact.id" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="contact.id" />
+
+    <div class="form-group">
+        <label asp-for="contact.firstName" class="control-label"></label>
+        <input asp-for="contact.firstName" class="form-control" />
+        <span asp-validation-for="contact.firstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="contact.secondName" class="control-label"></label>
+        <input asp-for="contact.secondName" class="form-control" />
+        <span asp-validation-for="contact.secondName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="contact.phone" class="control-label"></label>
+        <input asp-for="contact.phone" class="form-control" />
+        <span asp-validation-for="contact.phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="contact.email" class="control-label"></label>
+        <input asp-for="contact.email" class="form-control" />
+        <span asp-validation-for="contact.email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.group.name" class="control-label"></label>
+        <select asp-for="contact.group.id" asp-items="@(new SelectList(Model.groups, "id", "name"))"
+                class="form-control">
+            <option value="">Выберите группу</option>
+        </select>
+        <span asp-validation-for="contact.group.id" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-success">Редактировать</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </div>
+</form>
+

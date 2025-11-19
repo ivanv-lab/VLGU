@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\pilot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:pilot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|c:\\users\\ivanv\\desktop\\vlgu (1)\\vlgu\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u043F\\lab2\\lab2_8\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E259CAEB-F05A-4FEE-93E9-12C9ED6AFD84}|Lab2_8.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Flight.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Flight.cs",
+              "RelativeDocumentMoniker": "Flight.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Flight.cs",
+              "RelativeToolTip": "Flight.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA6wC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:30:07.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Airplane.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Airplane.cs",
+              "RelativeDocumentMoniker": "Airplane.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Airplane.cs",
+              "RelativeToolTip": "Airplane.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwDAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:48:21.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Passenger.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Passenger.cs",
+              "RelativeDocumentMoniker": "Passenger.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Passenger.cs",
+              "RelativeToolTip": "Passenger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:45:24.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pilot.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Pilot.cs",
+              "RelativeDocumentMoniker": "Pilot.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Pilot.cs",
+              "RelativeToolTip": "Pilot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:41:25.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Person.cs",
+              "RelativeDocumentMoniker": "Person.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Person.cs",
+              "RelativeToolTip": "Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:38:47.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU (1)\\VLGU\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u041F\\Lab2\\Lab2_8\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T22:33:24.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

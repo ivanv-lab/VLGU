@@ -1,0 +1,42 @@
+﻿@model Client
+
+<h2>Редактирование клиента</h2>
+
+<form asp-action="Edit" asp-route-id="@Model.id" method="post">
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group">
+        <label asp-for="companyName" class="control-label"></label>
+        <input asp-for="companyName" class="form-control"/>
+        <span asp-validation-for="companyName" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="contactPerson" class="control-label"></label>
+        <input asp-for="contactPerson" class="form-control" />
+        <span asp-validation-for="contactPerson" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="email" class="control-label"></label>
+        <input asp-for="email" class="form-control" />
+        <span asp-validation-for="email" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="phone" class="control-label"></label>
+        <input asp-for="phone" class="form-control" />
+        <span asp-validation-for="phone" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="address" class="control-label"></label>
+        <input asp-for="address" class="form-control" />
+        <span asp-validation-for="address" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-success">Редактировать</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\bin\Debug\net9.0\Lab_6.exe
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\bin\Debug\net9.0\Lab_6.deps.json
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\bin\Debug\net9.0\Lab_6.runtimeconfig.json
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\bin\Debug\net9.0\Lab_6.dll
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\bin\Debug\net9.0\Lab_6.pdb
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.AssemblyInfoInputs.cache
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.AssemblyInfo.cs
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.csproj.CoreCompileInputs.cache
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.dll
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\refint\Lab_6.dll
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.pdb
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\Lab_6.genruntimeconfig.cache
+C:\Users\ivanv\Desktop\VLGU (1)\VLGU\АиСД-2\Lab_6\Lab_6\obj\Debug\net9.0\ref\Lab_6.dll

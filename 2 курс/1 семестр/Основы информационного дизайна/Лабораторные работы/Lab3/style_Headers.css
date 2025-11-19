@@ -1,0 +1,50 @@
+/* a{
+    color: blueviolet;
+} */
+/* a:visited{
+    color: blue;
+}
+a:active{
+    color: yellow;
+}
+a:hover{
+    color:green
+} */
+
+/* .h1-class{
+    color-scheme: inherit;
+    color: red;
+}
+.h2-class{
+    color-scheme: initial;
+    color:fuchsia;
+}
+.h3-class{
+    color-scheme: unset;
+    color: cadetblue;
+} */
+
+/* Для 5 задания: */
+.h1-class:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 3s;
+    transition-timing-function: ease;
+    height: 50px;
+    background-color: black;
+}
+.h2-class:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 3s;
+    transition-timing-function: ease;
+    width: 150px;
+    background-color: brown;
+}
+.h3-class:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 3s;
+    transition-timing-function: ease;
+    background-color: violet;
+}

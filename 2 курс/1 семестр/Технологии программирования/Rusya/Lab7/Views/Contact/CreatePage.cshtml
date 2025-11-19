@@ -1,0 +1,46 @@
+﻿@using Lab7.Models.ViewModels
+@model ContactCreateModel
+
+<h2>Создание контакта</h2>
+
+<form asp-action="Create" asp-controller="Contact" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.firstName" class="control-label"></label>
+        <input asp-for="@Model.contact.firstName" class="form-control" />
+        <span asp-validation-for="@Model.contact.firstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.secondName" class="control-label"></label>
+        <input asp-for="@Model.contact.secondName" class="form-control" />
+        <span asp-validation-for="@Model.contact.secondName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.phone" class="control-label"></label>
+        <input asp-for="@Model.contact.phone" class="form-control" />
+        <span asp-validation-for="@Model.contact.phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.email" class="control-label"></label>
+        <input asp-for="@Model.contact.email" class="form-control" />
+        <span asp-validation-for="@Model.contact.email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.contact.group.name" class="control-label"></label>
+        <select asp-for="contact.group.id" asp-items="@(new SelectList(Model.groups, "id", "name"))"
+                class="form-control">
+            <option value="">Выберите группу</option>
+        </select>
+        <span asp-validation-for="contact.group.id" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-success">Создать</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </div>
+</form>

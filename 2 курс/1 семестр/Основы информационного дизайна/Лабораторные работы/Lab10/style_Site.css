@@ -1,0 +1,158 @@
+html {
+    background-image: url('wall/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body {
+    width: 90%;
+    margin: 58px auto;
+    text-align: center;
+    font: 24px Consolas bold;
+    font-family: Trebuchet MS;
+}
+
+header {
+    color: white;
+    width: 100%;
+    background: #dfdfdf;
+    border: 10px white solid;
+    border-radius: 50px 50px 50px 50px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#home nav {
+    height: 78px;
+    top: 30vh;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    font-size: 1.2em;
+    left: 0;
+    height: 58px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: none;
+    position: fixed;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 0px solid red;
+}
+
+nav a {
+    text-decoration: none;
+    color: tomato;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid red;
+}
+
+main {
+    width: 76%;
+    background: #dfdfdf;
+    display: inline-block;
+    border: 10px white solid;
+    padding: 2%;
+}
+
+aside {
+    width: 18%;
+    height: 30%;
+    display: inline-block;
+    background: #dfdfdf;
+    border: 10px white solid;
+    margin-right: -20px;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background: #dfdfdf;
+    float: left;
+    border: 10px white solid;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    background: tomato;
+    padding: 2%;
+}
+
+article {
+    width: 80%;
+    padding: 1%;
+    background: #efefef;
+    margin: 10px auto;
+}
+
+#home header {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    border-radius: 0 0 50px 50px;
+}
+
+#container {
+    margin-top: 80vh;
+}
+
+#home header h1 {
+    width: 100%;
+    position: absolute;
+    font-size: 15vh;
+    text-align: center;
+}
+
+#home header h3 {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50vh;
+    text-align: right;
+}
+
+.dropdown-menu a, .dropdown-menu span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}

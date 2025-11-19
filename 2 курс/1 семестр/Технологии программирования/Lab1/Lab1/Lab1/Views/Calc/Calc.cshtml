@@ -1,0 +1,128 @@
+﻿@model CalcModel;
+
+@{
+    ViewData["Title"] = "Calc Page";
+}
+
+@using (Html.BeginForm("Calculate", "Calc", FormMethod.Post, new { @class = "calculator-form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="calculator">
+        <div class="calculator-display">
+            @Html.TextBoxFor(m => m.Expression, new {
+            @class = "form-control calculator-input",
+                @readonly = "readonly",
+                @placeholder = "0"
+                })
+    </div>
+
+    <div class="calculator-buttons">
+        <div class="calculator-row">
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="7">7</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="8">8</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="9">9</button>
+            <button type="button" class="btn btn-warning calculator-btn operator" data-value="/">/</button>
+        </div>
+
+        <div class="calculator-row">
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="4">4</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="5">5</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="6">6</button>
+            <button type="button" class="btn btn-warning calculator-btn operator" data-value="*">×</button>
+        </div>
+
+        <div class="calculator-row">
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="1">1</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="2">2</button>
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="3">3</button>
+            <button type="button" class="btn btn-warning calculator-btn operator" data-value="-">-</button>
+        </div>
+
+        <div class="calculator-row">
+            <button type="button" class="btn btn-secondary calculator-btn" data-value="0">0</button>
+            <button type="button" class="btn btn-danger calculator-btn" id="clear-btn">C</button>
+            <button type="submit" class="btn btn-success calculator-btn" id="equals-btn">=</button>
+            <button type="button" class="btn btn-warning calculator-btn operator" data-value="+">+</button>
+        </div>
+    </div>
+</div>
+}
+
+<div class="result-display mb-3">
+    <input type="text" class="form-control result-input"
+           value="@ViewBag.CalcResult" readonly />
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const display = document.querySelector('.calculator-input');
+            const clearBtn = document.getElementById('clear-btn');
+            const numberBtns = document.querySelectorAll('.calculator-btn[data-value]');
+            const operatorBtns = document.querySelectorAll('.operator');
+
+            numberBtns.forEach(btn => {
+                if (!btn.classList.contains('operator')) {
+                    btn.addEventListener('click', function() {
+                        const value = this.getAttribute('data-value');
+                        if (display.value === '0') {
+                            display.value = value;
+                        } else {
+                            display.value += value;
+                        }
+                    });
+                }
+            });
+
+            operatorBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const operator = this.getAttribute('data-value');
+                    display.value += ' ' + operator + ' ';
+                });
+            });
+
+            clearBtn.addEventListener('click', function() {
+                display.value = '0';
+            });
+        });
+    </script>
+}
+
+<style>
+    .calculator {
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+    }
+
+    .calculator-display {
+        margin-bottom: 15px;
+    }
+
+    .calculator-input {
+        text-align: right;
+        font-size: 1.5em;
+        height: 50px;
+    }
+
+    .calculator-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .calculator-row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .calculator-btn {
+        flex: 1;
+        height: 50px;
+        font-size: 1.2em;
+    }
+</style>

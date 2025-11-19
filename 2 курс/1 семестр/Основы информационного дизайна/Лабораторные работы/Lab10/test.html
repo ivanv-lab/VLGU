@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="style_Site.css">
+    <script src="random.js"></script>
+    <script src="score.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = changeBG;
+    </script>
+    <header>
+        <h1>Site name</h1>
+        <h3>Page with test</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Here is the test</p>
+        <section>
+            <p>Test</p>
+            <form id="test">
+                <fieldset style="display:inline-block">
+                    <legend>First question</legend>
+                    <p><label><input type="radio" name="counter"> Answer
+                            1</label></p>
+                    <p><label><input type="radio" name="counter" datatrue="1"> Answer 2</label></p>
+                    <p><label><input type="radio" name="counter"> Answer
+                            3</label></p>
+                </fieldset>
+                <fieldset style="display:inline-block">
+                    <legend>Second question</legend>
+                    <p><label><input type="checkbox" name="check" datatrue="1"> Answer 1</label></p>
+                    <p><label><input type="checkbox" name="check"> Answer
+                            2</label></p>
+                    <p><label><input type="checkbox" name="check" datatrue="1"> Answer 3</label></p>
+                </fieldset>
+                <p><label>Text question </label><input type="text" name="text1" data-true="2" data-ans="happy"></p>
+            </form>
+            <button onClick="score();">Get the score!</button>
+        </section>
+    </main>
+    <aside>
+        <p>aside</p>
+    </aside>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+
+</html>

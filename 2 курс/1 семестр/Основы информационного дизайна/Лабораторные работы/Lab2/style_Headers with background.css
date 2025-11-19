@@ -1,0 +1,27 @@
+body {
+    background-image: url(fruits.jpg);
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: 100%;
+}
+h1, h2, h3 {
+    background-color: white;
+}
+h1 {
+    text-transform: uppercase;
+    color: orange;
+    text-align: left;
+    text-decoration: overline;
+}
+h2 { 
+    text-transform: capitalize;
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+h3 {
+    text-transform: lowercase;
+    color: green;
+    text-align: right;
+    text-decoration: line-through;
+}

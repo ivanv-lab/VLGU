@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Authorization</legend>
+            <div style="display: inline-block;">
+                <p><label for="name">Name</label></p>
+                <p><label for="password">Password</label></p>
+            </div>
+            <div style="display: inline-block;">
+                <p><input type="text" id="name" required 
+                    placeholder="Name of your account" name="name-input"></p>
+                <p><input type="password" id="password" required 
+                    placeholder="Password of your account" name="pass-input"></p>
+            </div>
+                <p><label for="agree">I agree</label>
+                    <input type="checkbox" id="agree" required name="agree-checkbox">
+                </p>
+                <p><label for="singin" id="singin"></label>
+                    <input type="submit" id="singin" value="Sing in" name="singin-button">
+                </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

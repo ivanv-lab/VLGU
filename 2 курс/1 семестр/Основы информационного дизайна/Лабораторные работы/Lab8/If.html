@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inputNum=null;
+        function inputNumber(){
+            inputNum=prompt("Input number","1");
+        }
+        
+        function countdown(){
+            if(inputNum==null || !Number.isInteger(Number(inputNum))){
+                alert("Wrong number");
+            } else {
+                for(i=inputNum;i>=0;i--){
+                    if(i==0) alert("Finish");
+                    else alert(i);
+                }
+            }
+        }
+    </script>
+    <button onclick="inputNumber();">Input number</button>
+    <button onclick="countdown();">Countdown</button>
+</body>
+</html>

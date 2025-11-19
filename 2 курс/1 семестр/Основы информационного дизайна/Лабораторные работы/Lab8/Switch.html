@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun() {
+            var number = prompt("Input number 1-10", "1");
+            switch (number) {
+                case "6":
+                case "7":
+                case "8":
+                case "10": alert("Близко!"); break;
+                case "9": alert("Верно!"); break;
+                default: alert("Неверно!");
+            }
+        }   
+    </script>
+    <button onclick="fun();">Switch</button>
+</body>
+
+</html>

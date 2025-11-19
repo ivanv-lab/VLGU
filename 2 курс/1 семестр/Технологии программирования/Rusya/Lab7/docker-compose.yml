@@ -1,0 +1,18 @@
+version: '1.0'
+
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: lab7
+      POSTGRES_USER: lab7user
+      POSTGRES_PASSWORD: lab7password
+    ports:
+      - "5430:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  pgdata:
