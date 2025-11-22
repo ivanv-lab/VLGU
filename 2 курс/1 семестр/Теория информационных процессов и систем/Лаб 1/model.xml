@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="A0-Диаграмма ИС Кафе" id="IDEF0-Кафе-Улучшенная">
+        <mxGraphModel dx="1926" dy="1281" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Основной контейнер -->
+                <mxCell id="mainContainer" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="60" width="1600" height="900" as="geometry"/>
+                </mxCell>
+                
+                <!-- Заголовок диаграммы -->
+                <mxCell id="title" value="ДИАГРАММА А0: Информационная система «Кафе»" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="mainContainer">
+                    <mxGeometry y="10" width="1600" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Основные блоки с увеличенными расстояниями -->
+                <mxCell id="block1" value="А1: Управление ассортиментом и данными" style="rounded=0;whiteSpace=wrap;fontSize=14;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="mainContainer">
+                    <mxGeometry x="100" y="100" width="280" height="100" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="block2" value="А2: Формирование и актуализация меню" style="rounded=0;whiteSpace=wrap;fontSize=14;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="mainContainer">
+                    <mxGeometry x="550" y="100" width="280" height="100" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="block3" value="А3: Предоставление информации и отчётность" style="rounded=0;whiteSpace=wrap;fontSize=14;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="mainContainer">
+                    <mxGeometry x="1000" y="100" width="280" height="100" as="geometry"/>
+                </mxCell>
+
+                <!-- ========== ВХОДНЫЕ СТРЕЛКИ (СЛЕВА) ========== -->
+                
+                <!-- Вход для А1 -->
+                <mxCell id="input1" value="Рецепты и технологические карты" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="20" y="150" as="sourcePoint"/>
+                        <mxPoint x="100" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Вход для А2 -->
+                <mxCell id="input2" value="Фактические остатки продуктов" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="20" y="250" as="sourcePoint"/>
+                        <mxPoint x="550" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Вход для А3 -->
+                <mxCell id="input3" value="Данные о продажах" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="20" y="350" as="sourcePoint"/>
+                        <mxPoint x="1000" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ========== УПРАВЛЯЮЩИЕ СТРЕЛКИ (СВЕРХУ) ========== -->
+                
+                <!-- Управление для А1 -->
+                <mxCell id="control1" value="Справочник стандартов блюд" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=0;exitX=0.5;exitY=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="240" y="60" as="sourcePoint"/>
+                        <mxPoint x="240" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Управление для А2 -->
+                <mxCell id="control2" value="План акций и спецпредложений" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=0;exitX=0.5;exitY=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="690" y="60" as="sourcePoint"/>
+                        <mxPoint x="690" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Управление для А3 -->
+                <mxCell id="control3" value="Запросы от персонала" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=0;exitX=0.5;exitY=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="1140" y="60" as="sourcePoint"/>
+                        <mxPoint x="1140" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ========== ВЫХОДНЫЕ СТРЕЛКИ (СПРАВА) ========== -->
+                
+                <!-- Связь А1 → А2 -->
+                <mxCell id="output1" value="Актуальные карточки блюд" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="150" height="100" relative="1" as="geometry">
+                        <mxPoint x="380" y="150" as="sourcePoint"/>
+                        <mxPoint x="550" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Связь А2 → А3 -->
+                <mxCell id="output2" value="Согласованное ежедневное меню" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="150" height="100" relative="1" as="geometry">
+                        <mxPoint x="830" y="130" as="sourcePoint"/>
+                        <mxPoint x="1000" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Дополнительная связь А2 → А3 -->
+                <mxCell id="output3" value="Список недоступных блюд" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0;entryY=0.5;exitX=1;exitY=0.5;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="150" height="100" relative="1" as="geometry">
+                        <mxPoint x="830" y="170" as="sourcePoint"/>
+                        <mxPoint x="1000" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Финальные выходы системы -->
+                <mxCell id="output4" value="Утверждённое ежедневное меню" style="endArrow=classic;html=1;rounded=0;fontSize=13;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="1280" y="120" as="sourcePoint"/>
+                        <mxPoint x="1400" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="output5" value="Отчёты по популярности блюд" style="endArrow=classic;html=1;rounded=0;fontSize=13;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="1280" y="150" as="sourcePoint"/>
+                        <mxPoint x="1400" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <mxCell id="output6" value="Информация для кухни и зала" style="endArrow=classic;html=1;rounded=0;fontSize=13;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="1280" y="180" as="sourcePoint"/>
+                        <mxPoint x="1400" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ========== МЕХАНИЗМЫ (СНИЗУ) ========== -->
+                
+                <!-- Механизмы для А1 -->
+                <mxCell id="mechanism1" value="Управляющий, База данных" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=1;exitX=0.5;exitY=0;dashed=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="240" y="250" as="sourcePoint"/>
+                        <mxPoint x="240" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Механизмы для А2 -->
+                <mxCell id="mechanism2" value="Шеф-повар, Программное обеспечение" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=1;exitX=0.5;exitY=0;dashed=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="690" y="250" as="sourcePoint"/>
+                        <mxPoint x="690" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Механизмы для А3 -->
+                <mxCell id="mechanism3" value="Официанты, Повара, Система отчетности" style="endArrow=classic;html=1;rounded=0;fontSize=13;entryX=0.5;entryY=1;exitX=0.5;exitY=0;dashed=1;strokeWidth=1;" edge="1" parent="mainContainer">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="1140" y="250" as="sourcePoint"/>
+                        <mxPoint x="1140" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ========== ЛЕГЕНДА И ПОЯСНЕНИЯ ========== -->
+                
+                <mxCell id="legend" value="&lt;b&gt;ОБОЗНАЧЕНИЯ IDEF0:&lt;/b&gt;&lt;br&gt;• Стрелки слева - &lt;b&gt;Входы&lt;/b&gt; (Input)&lt;br&gt;• Стрелки сверху - &lt;b&gt;Управление&lt;/b&gt; (Control)&lt;br&gt;• Стрелки справа - &lt;b&gt;Выходы&lt;/b&gt; (Output)&lt;br&gt;• Стрелки снизу - &lt;b&gt;Механизмы&lt;/b&gt; (Mechanism)" style="text;strokeColor=none;fillColor=#f8f8f8;align=left;verticalAlign=top;spacingLeft=10;fontSize=12;fontStyle=0;rounded=1;" vertex="1" parent="mainContainer">
+                    <mxGeometry x="100" y="300" width="300" height="120" as="geometry"/>
+                </mxCell>
+
+                <!-- Дополнительная информация -->
+                <mxCell id="info" value="&lt;b&gt;Точка зрения:&lt;/b&gt; Управляющий/Шеф-повар&lt;br&gt;&lt;b&gt;Цель модели:&lt;/b&gt; Оптимизация процессов формирования меню и управления ассортиментом" style="text;strokeColor=none;fillColor=#f8f8f8;align=left;verticalAlign=top;spacingLeft=10;fontSize=11;fontStyle=0;rounded=1;" vertex="1" parent="mainContainer">
+                    <mxGeometry x="450" y="300" width="400" height="80" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
