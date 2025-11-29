@@ -1,0 +1,71 @@
+﻿@model Tasks
+
+@{
+    ViewData["Title"] = "Информация о задаче";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="card-title mb-0">
+                        <i class="fas fa-building"></i> Информация о задаче
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">ID:</dt>
+                                <dd class="col-sm-8">@Model.id</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.title):</dt>
+                                <dd class="col-sm-8">@Model.title</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.description):</dt>
+                                <dd class="col-sm-8">@Model.description</dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.deadline):</dt>
+                                <dd class="col-sm-8">@Model.deadline.ToString("dd.MM.yyyy")</dd>
+
+                                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.status):</dt>
+                                <dd class="col-sm-8">@Model.status.name</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <dt>@Html.DisplayNameFor(model => model.assignedTo):</dt>
+                            <dd>@Model.assignedTo</dd>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <dt>@Html.DisplayNameFor(model => model.project):</dt>
+                            <dd>@Model.project.name</dd>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group">
+                        <a asp-controller="Tasks" asp-action="EditPage" asp-route-id="@Model.id"
+                           class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Редактировать
+                        </a>
+                        <a asp-controller="Tasks" asp-action="Index"
+                           class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Назад к списку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

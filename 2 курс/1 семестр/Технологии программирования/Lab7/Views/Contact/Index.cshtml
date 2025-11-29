@@ -1,0 +1,41 @@
+﻿@using Lab7.Models.ViewModels
+@model ContactViewModel
+
+<a asp-action="CreatePage" class="btn btn-primary">Добавить</a>
+
+<h5>Фильтрация</h5>
+@if(Model!=null && Model.groups.Count() != 0)
+{
+    @foreach(Group group in Model.groups)
+    {
+        <a asp-action="FilterByGroup" asp-controller="Contact" asp-route-id="@group.id" class="btn btn-sm btn-info">@group.name</a>
+    }
+    <a asp-action="Index" class="btn btn-sm btn-info">Сбросить</a>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.contacts.Count() != 0)
+        {
+            foreach (Contact contact in Model.contacts)
+            {
+                <tr>
+                    <td>@contact.firstName</td>
+                    <td>@contact.secondName</td>
+                    <td>@contact.phone</td>
+                    <td>
+                        <a asp-action="Delete" asp-controller="Contact" asp-route-id="@contact.id" class="btn btn-sm btn-danger">Удалить</a>
+                        <a asp-action="Details" asp-controller="Contact" asp-route-id="@contact.id" class="btn btn-sm btn-info">Подробно</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

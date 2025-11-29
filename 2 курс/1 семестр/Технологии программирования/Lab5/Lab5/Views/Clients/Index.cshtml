@@ -1,0 +1,73 @@
+﻿@model List<Client>
+
+<div class="card shadow-sm">
+    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+        <h4 class="card-title mb-0">
+            <i class="bi bi-people me-2"></i>Список клиентов
+        </h4>
+        <a asp-action="CreatePage" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>Добавить клиента
+        </a>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th><i class="bi bi-building me-1"></i>Наименование компании</th>
+                        <th><i class="bi bi-person me-1"></i>Контактное лицо</th>
+                        <th><i class="bi bi-envelope me-1"></i>Email</th>
+                        <th><i class="bi bi-telephone me-1"></i>Телефон</th>
+                        <th><i class="bi bi-geo-alt me-1"></i>Адрес</th>
+                        <th class="text-center">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count != 0)
+                    {
+                        foreach (Client client in Model)
+                        {
+                            <tr>
+                                <td class="fw-semibold">@client.companyName</td>
+                                <td>@client.contactPerson</td>
+                                <td>
+                                    <a href="mailto:@client.email" class="text-decoration-none">
+                                        <i class="bi bi-envelope me-1"></i>@client.email
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="tel:@client.phone" class="text-decoration-none">
+                                        <i class="bi bi-telephone me-1"></i>@client.phone
+                                    </a>
+                                </td>
+                                <td>@client.address</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <a asp-action="Details" asp-route-id="@client.id"
+                                           class="btn btn-outline-info" title="Подробнее">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-controller="Clients" asp-route-id="@client.id"
+                                           class="btn btn-outline-danger" title="Удалить"
+                                           onclick="return confirm('Вы уверены, что хотите удалить этого клиента?');">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center py-4 text-muted">
+                                <i class="bi bi-inbox display-4 d-block mb-2"></i>
+                                Клиенты не найдены
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

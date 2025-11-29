@@ -1,0 +1,45 @@
+﻿@using Lab7.Models.ViewModels
+@model ContactViewModel
+
+<a asp-action="CreatePage" class="btn btn-primary">Добавить</a>
+
+<div id="contacts-table">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    function partialLoad(){
+        console.log("Функция partialLoad вызвана");
+        $.ajax({
+            url: '@Url.Action("ContactsPartialTable", "Contact")',
+            type: 'GET',
+            data:{},
+            success: function(data){
+                console.log("AJAX успешно выполнен");
+                $('#contacts-table').html(data);
+            }
+        });
+    }
+
+        function filterByGroup(groupId) {
+        console.log("Фильтрация по группе:", groupId);
+
+        $.ajax({
+            url: '@Url.Action("FilterByGroup", "Contact")',
+            type: 'GET',
+            data: { id: groupId },
+            success: function(data) {
+                $('#contacts-table').html(data);
+            },
+            error: function(xhr, status, error) {
+                console.error("Ошибка при фильтрации:", error);
+            }
+        });
+    }
+
+     $(document).ready(function() {
+        console.log("Документ загружен, запускаем загрузку таблицы");
+        partialLoad();
+    });
+</script>
