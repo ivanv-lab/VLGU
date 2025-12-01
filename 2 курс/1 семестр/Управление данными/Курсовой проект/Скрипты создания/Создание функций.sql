@@ -3,7 +3,7 @@
 -- Логика: SELECT AVG(grade) с фильтром по student_id и где control_type = 'Экзамен'
 DROP FUNCTION avg_student_rate;
 
-CREATE OR REPLACE FUNCTION avg_student_rate(input_student_id int) 
+CREATE OR REPLACE FUNCTION avg_student_rate(input_student_id int, start_year varchar) 
 returns decimal(10,2)
 LANGUAGE plpgsql
 AS $$
@@ -12,7 +12,8 @@ BEGIN
 	SELECT AVG(session_grades.grade) 
 	INTO avg_rate
 	FROM session_grades
-	WHERE session_grades.student_id=input_student_id;
+	WHERE session_grades.student_id=input_student_id; AND
+	AND substring(session_grades.academic_year from 1 for 4)=start_year
 	RETURN avg_rate;
 END;
 $$;

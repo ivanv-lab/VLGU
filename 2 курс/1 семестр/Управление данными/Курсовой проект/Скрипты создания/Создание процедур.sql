@@ -5,8 +5,8 @@ DROP PROCEDURE create_student;
 
 CREATE OR REPLACE PROCEDURE 
 create_student(
-first_name varchar(50),
-last_name varchar(100),
+last_name varchar(50),
+first_name varchar(100),
 second_name varchar(100),
 birth_date date, 
 address text,
@@ -31,7 +31,7 @@ BEGIN
 
 	INSERT into students(full_name, birth_date, address,
 	phone, biography, group_id) VALUES 
-	(first_name || ' ' || last_name || ' ' || second_name,
+	(last_name || ' ' || first_name || ' ' || second_name,
 	birth_date, address, phone, biography, group_id);
 END;
 $$;

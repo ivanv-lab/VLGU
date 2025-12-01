@@ -7,7 +7,7 @@ CREATE TABLE specialties
 CREATE TABLE groups
 (
     id SERIAL PRIMARY KEY,
-    code VARCHAR(20),
+    code VARCHAR(20) UNIQUE,
     specialty_id serial references specialties (id)
 );
 
@@ -17,7 +17,7 @@ CREATE TABLE students
     full_name VARCHAR(255),
     birth_date DATE,
     address TEXT,
-    phone VARCHAR(11),
+    phone VARCHAR(11) UNIQUE,
 	biography TEXT,
 	group_id serial references groups (id)
 );
@@ -27,7 +27,7 @@ CREATE TYPE control_enum AS ENUM('Экзамен','Зачет');
 CREATE TABLE subjects 
 (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
+    name VARCHAR(255) UNIQUE,
     hours INT,
     control_type control_enum
 );

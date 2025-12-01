@@ -3,28 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\views\\clients\\createpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\clients\\createpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\dao\\advertisingcampaigndao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\advertisingcampaigndao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\models\\advertisingcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\advertisingcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\dao\\clientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\clientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\models\\viewmodels\\createcampaignviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\createcampaignviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\views\\advertisingcampaigns\\editpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\advertisingcampaigns\\editpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\controllers\\advertisingcampaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\controllers\\advertisingcampaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\rusya\\lab5\\lab5\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,33 +74,72 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdvertisingCampaign.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\AdvertisingCampaign.cs",
-              "RelativeDocumentMoniker": "Lab5\\Models\\AdvertisingCampaign.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\AdvertisingCampaign.cs",
-              "RelativeToolTip": "Lab5\\Models\\AdvertisingCampaign.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T21:48:24.722Z",
+              "DocumentIndex": 2,
+              "Title": "CreatePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T06:06:10.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Lab5\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\Client.cs",
-              "RelativeToolTip": "Lab5\\Models\\Client.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T21:43:32.421Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\Clients\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T06:02:41.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Lab5\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Controllers\\ClientsController.cs*",
+              "RelativeToolTip": "Lab5\\Controllers\\ClientsController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T06:01:08.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdvertisingCampaignDAO.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\DAO\\AdvertisingCampaignDAO.cs",
+              "RelativeDocumentMoniker": "Lab5\\DAO\\AdvertisingCampaignDAO.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\DAO\\AdvertisingCampaignDAO.cs*",
+              "RelativeToolTip": "Lab5\\DAO\\AdvertisingCampaignDAO.cs*",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwEYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:57:15.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientDAO.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\DAO\\ClientDAO.cs",
+              "RelativeDocumentMoniker": "Lab5\\DAO\\ClientDAO.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\DAO\\ClientDAO.cs",
+              "RelativeToolTip": "Lab5\\DAO\\ClientDAO.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:56:53.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DAO.cs",
               "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\DAO\\DAO.cs",
               "RelativeDocumentMoniker": "Lab5\\DAO\\DAO.cs",
@@ -72,43 +147,111 @@
               "RelativeToolTip": "Lab5\\DAO\\DAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T21:30:44.545Z",
+              "WhenOpened": "2025-12-01T05:56:25.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "init.sql",
+              "DocumentIndex": 8,
+              "Title": "EditPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\AdvertisingCampaigns\\EditPage.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\AdvertisingCampaigns\\EditPage.cshtml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\AdvertisingCampaigns\\EditPage.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\AdvertisingCampaigns\\EditPage.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T05:56:13.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateCampaignViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\ViewModels\\CreateCampaignViewModel.cs",
+              "RelativeDocumentMoniker": "Lab5\\Models\\ViewModels\\CreateCampaignViewModel.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\ViewModels\\CreateCampaignViewModel.cs",
+              "RelativeToolTip": "Lab5\\Models\\ViewModels\\CreateCampaignViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:55:30.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdvertisingCampaign.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\AdvertisingCampaign.cs",
+              "RelativeDocumentMoniker": "Lab5\\Models\\AdvertisingCampaign.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\AdvertisingCampaign.cs",
+              "RelativeToolTip": "Lab5\\Models\\AdvertisingCampaign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:55:00.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Lab5\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\Client.cs",
+              "RelativeToolTip": "Lab5\\Models\\Client.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:54:13.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Lab5\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Lab5\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:54:11.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\docker-compose.yml",
+              "RelativeDocumentMoniker": "Lab5\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\docker-compose.yml",
+              "RelativeToolTip": "Lab5\\docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-01T05:52:46.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "init.sql ",
               "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\init.sql",
               "RelativeDocumentMoniker": "Lab5\\init.sql",
               "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\init.sql",
               "RelativeToolTip": "Lab5\\init.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-11-10T21:22:40.828Z"
+              "WhenOpened": "2025-12-01T05:52:40.3Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Lab5\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Lab5\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T20:02:10.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdvertisingCampaignsController.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Controllers\\AdvertisingCampaignsController.cs",
-              "RelativeDocumentMoniker": "Lab5\\Controllers\\AdvertisingCampaignsController.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Controllers\\AdvertisingCampaignsController.cs",
-              "RelativeToolTip": "Lab5\\Controllers\\AdvertisingCampaignsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Program.cs",
+              "RelativeDocumentMoniker": "Lab5\\Program.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Rusya\\Lab5\\Lab5\\Program.cs",
+              "RelativeToolTip": "Lab5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T19:57:19.096Z"
+              "WhenOpened": "2025-12-01T05:52:34.847Z",
+              "EditorCaption": ""
             }
           ]
         }
