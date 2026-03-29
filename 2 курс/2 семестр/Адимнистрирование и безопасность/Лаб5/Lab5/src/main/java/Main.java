@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String text="Двадцать первое. Ночь. Понедельник. " +
+                "Очертанья столицы во мгле. Сочинил же какой-то " +
+                "бездельник, что бывает любовь на земле. " +
+                "И от лености или от скуки все поверили, " +
+                "так и живут: ждут свиданий, боятся разлуки " +
+                "и любовные песни поют",
+        key="ловушка";
+
+        Encrypter encrypter=new Encrypter(text,key);
+        System.out.println("Encrypted text: "+encrypter
+                .encrypt());
+    }
+}
