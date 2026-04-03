@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group = 'vlsu.lab'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
+
+dependencies {
+    // Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    implementation 'org.junit.jupiter:junit-jupiter-api:6.0.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:6.0.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher
+    testImplementation 'org.junit.platform:junit-platform-launcher:6.0.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation 'org.junit.jupiter:junit-jupiter:6.0.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:6.0.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner
+    testImplementation 'org.junit.platform:junit-platform-runner:1.14.3'
+    // Source: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api
+    testImplementation 'org.junit.platform:junit-platform-suite-api:6.0.3'
+
+    // Source: https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation 'org.postgresql:postgresql:42.7.10'
+}
+
+test {
+    useJUnitPlatform()
+}
