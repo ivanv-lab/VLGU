@@ -5,6 +5,7 @@ using System.Text;
 using AdvertisingAgency.Model.Authorization;
 using AdvertisingAgency.Repository.Authorization;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AdvertisingAgency.Service;
@@ -13,14 +14,17 @@ public class AuthService
 {
     private readonly UserRepository repository;
     private readonly IConfiguration configuration;
+    private readonly IPasswordHasher<User> passwordHasher;
 
     public AuthService(UserRepository repository,
-        IConfiguration configuration)
+        IConfiguration configuration,
+        IPasswordHasher<User> passwordHasher)
     {
         this.repository = repository;
         this.configuration = configuration;
+        this.passwordHasher = passwordHasher;
     }
-    
+
     public async Task<User> findUserByEmail(string email)
     {
         return await
@@ -29,25 +33,20 @@ public class AuthService
 
     public async Task<bool> checkPassword(User user, string password)
     {
-        password = hashPassword(password);
-        return user.passwordHash
-            .Equals(password);
+        //password = hashPassword(null,password);
+        //return user.PasswordHash
+        //    .Equals(password);
+        var result = passwordHasher
+            .VerifyHashedPassword(user, user.PasswordHash, password);
+        if (result == PasswordVerificationResult.Success)
+            return true;
+        else return false;
     }
 
-    public string hashPassword(string password)
+    public string hashPassword(User user,string password)
     {
-        byte[] salt = RandomNumberGenerator
-            .GetBytes(128 / 8);
-        string hashed = Convert.ToBase64String(KeyDerivation
-            .Pbkdf2(
-                password,
-                salt,
-                KeyDerivationPrf.HMACSHA256,
-                100000,
-                256 / 8
-            ));
-
-        return hashed;
+        return passwordHasher
+            .HashPassword(user, password);
     }
 
     public string generateJwtToken(User user, Role role)
@@ -55,12 +54,12 @@ public class AuthService
         var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub,
-                Convert.ToString(user.id)),
+                Convert.ToString(user.Id)),
             new Claim(JwtRegisteredClaimNames.Name,
-                user.fullname),
+                user.UserName),
             new Claim(JwtRegisteredClaimNames.Jti,
                 Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Role, role.name)
+            new Claim(ClaimTypes.Role, role.Name)
         };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8

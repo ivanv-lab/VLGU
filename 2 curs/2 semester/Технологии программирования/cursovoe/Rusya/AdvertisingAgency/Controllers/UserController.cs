@@ -39,7 +39,7 @@ public class UserController : ControllerBase
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(User),
         StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<User>> get(long id)
+    public async Task<ActionResult<User>> get(string id)
     {
         try
         {
@@ -72,23 +72,18 @@ public class UserController : ControllerBase
             if (string.IsNullOrEmpty(userCreate.fullname))
                 return BadRequest("User fullname is required");
 
-            if (string.IsNullOrEmpty(userCreate.email))
-                return BadRequest("User email is required");
-
-            if (string.IsNullOrEmpty(userCreate.password))
-                return BadRequest("User password is required");
-
-            if (userCreate.roleId == null || userCreate.roleId == 0)
+            if (userCreate.roleId == null || userCreate.roleId.IsWhiteSpace())
                 return BadRequest("User role id is required");
 
-            User user = new User(0, userCreate.fullname,
+            User user = new User
+                (userCreate.fullname, 
                 userCreate.email, 
-                authService.hashPassword(userCreate.password),
+                authService.hashPassword(null,userCreate.password),
                 userCreate.roleId);
             user = await repository.save(user);
 
             return CreatedAtAction(nameof(get),
-                new { id = user.id }, user);
+                new { id = user.Id }, user);
         }
         catch (Exception ex)
         {
@@ -100,7 +95,7 @@ public class UserController : ControllerBase
     [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<User>> update(long id, [FromBody] UserCreateContract userUpdate)
+    public async Task<ActionResult<User>> update(string id, [FromBody] UserCreateContract userUpdate)
     {
         try
         {
@@ -110,20 +105,14 @@ public class UserController : ControllerBase
             if (string.IsNullOrEmpty(userUpdate.fullname))
                 return BadRequest("User fullname is required");
 
-            if (string.IsNullOrEmpty(userUpdate.email))
-                return BadRequest("User email is required");
-
-            if (string.IsNullOrEmpty(userUpdate.password))
-                return BadRequest("User password is required");
-
-            if (userUpdate.roleId == null || userUpdate.roleId == 0)
+            if (userUpdate.roleId == null || userUpdate.roleId.IsWhiteSpace())
                 return BadRequest("User role id is required");
 
             User updatedUser = await repository
-                .update(id, new User(id, userUpdate.fullname,
-                    userUpdate.email, 
-                    authService.hashPassword(userUpdate.password),
-                    userUpdate.roleId));
+                .update(id, new User(userUpdate.fullname,
+                userUpdate.email,
+                authService.hashPassword(null,userUpdate.password),
+                userUpdate.roleId));
 
             if (updatedUser == null)
                 return NotFound($"User with id {id} not found");
@@ -143,7 +132,7 @@ public class UserController : ControllerBase
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<bool>> delete(long id)
+    public async Task<ActionResult<bool>> delete(string id)
     {
         try
         {

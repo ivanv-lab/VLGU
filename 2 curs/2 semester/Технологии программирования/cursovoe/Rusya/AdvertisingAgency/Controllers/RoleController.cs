@@ -38,7 +38,7 @@ namespace AdvertisingAgency.Controllers
         [Authorize(Roles = "Admin")]
         [ProducesResponseType(typeof(Role),
             StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<Role>> get(int id)
+        public async Task<ActionResult<Role>> get(string id)
         {
             try
             {
@@ -72,11 +72,11 @@ namespace AdvertisingAgency.Controllers
                 if (string.IsNullOrEmpty(roleCreate.name))
                     return BadRequest("Role name is required");
 
-                Role role = new Role(0, roleCreate.name);
+                Role role = new Role(roleCreate.name);
                 role = await repository.save(role);
 
                 return CreatedAtAction(nameof(get),
-                    new { id = role.id }, role);
+                    new { id = role.Id }, role);
             } catch(Exception ex)
             {
                 return StatusCode(500, $"Internal server error: {ex.Message}");
@@ -88,7 +88,7 @@ namespace AdvertisingAgency.Controllers
         [ProducesResponseType(typeof(Role), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<Role>> update(int id, [FromBody]
+        public async Task<ActionResult<Role>> update(string id, [FromBody]
         RoleCreateContract roleUpdate)
         {
             try
@@ -100,7 +100,7 @@ namespace AdvertisingAgency.Controllers
                     return BadRequest("Role name is reqiered");
 
                 Role updatedRole = await repository
-                    .update(id, new Role(id, roleUpdate.name));
+                    .update(id, new Role(roleUpdate.name));
 
                 if (updatedRole == null)
                     return NotFound($"Role with id {id} not found");
@@ -121,7 +121,7 @@ namespace AdvertisingAgency.Controllers
         [Authorize(Roles = "Admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<bool>> delete(int id)
+        public async Task<ActionResult<bool>> delete(string id)
         {
             try
             {

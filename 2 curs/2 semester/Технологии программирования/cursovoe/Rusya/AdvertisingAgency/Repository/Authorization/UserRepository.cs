@@ -14,19 +14,26 @@ public class UserRepository
         this.context = context;
     }
 
-    public async Task<User> get(long id)
+    public async Task<User> get(string id)
     {
         return await context.users
-            .Where(u => u.id == id)
+            .Where(u => u.Id == id)
             .Include(u => u.role)
             .Include(u => u.tasks)
             .FirstAsync();
     }
 
+    public async Task<bool> isUserExists(string email)
+    {
+        return await context.users
+            .AnyAsync(u => u.Email.Equals(email));
+    }
+
     public async Task<User> getByEmail(String email)
     {
         return await context.users
-            .Where(u => u.email.Equals(email))
+            .Where(u => u.Email.Equals(email))
+            .Include(u=>u.role)
             .FirstAsync();
     }
 
@@ -43,10 +50,10 @@ public class UserRepository
         await context.users
             .AddAsync(user);
         await context.SaveChangesAsync();
-        return await get(user.id);
+        return await get(user.Id);
     }
 
-    public async Task<User> update(long id, User user)
+    public async Task<User> update(string id, User user)
     {
         User existedUser = await get(id);
         if (existedUser != null)
@@ -54,9 +61,9 @@ public class UserRepository
             try
             {
                 existedUser.roleId = user.roleId;
-                existedUser.email = user.email;
-                existedUser.fullname = user.fullname;
-                existedUser.passwordHash = user.passwordHash;
+                existedUser.Email = user.Email;
+                existedUser.UserName = user.UserName;
+                existedUser.PasswordHash = user.PasswordHash;
                 await context.SaveChangesAsync();
                 return await get(id);
             }
@@ -69,7 +76,7 @@ public class UserRepository
         throw new Exception($"User with id {id} not found");
     }
 
-    public async Task<bool> delete(long id)
+    public async Task<bool> delete(string id)
     {
         User existedUser = await get(id);
         if (existedUser != null)

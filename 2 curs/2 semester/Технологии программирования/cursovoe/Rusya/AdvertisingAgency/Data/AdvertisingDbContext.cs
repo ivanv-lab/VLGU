@@ -38,13 +38,32 @@ namespace AdvertisingAgency.Data
             modelBuilder.Entity<Role>(entity =>
             {
                 entity.ToTable("roles");
-                entity.HasIndex(e => e.name).IsUnique();
+                entity.Property(e => e.Name).HasColumnName("name");
+                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.NormalizedName).HasColumnName("normalized_name");
+                entity.Property(e => e.ConcurrencyStamp).HasColumnName("concurrency_stamp");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("users");
-                entity.HasIndex(e => e.email).IsUnique();
+                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.UserName).HasColumnName("fullname");
+                entity.Property(e => e.NormalizedUserName).HasColumnName("normalized_username");
+                entity.Property(e => e.Email).HasColumnName("email");
+                entity.Property(e => e.NormalizedEmail).HasColumnName("normalized_email");
+                entity.Property(e => e.EmailConfirmed).HasColumnName("email_confirmed");
+                entity.Property(e => e.PasswordHash).HasColumnName("password_hash");
+                entity.Property(e => e.SecurityStamp).HasColumnName("security_stamp");
+                entity.Property(e => e.ConcurrencyStamp).HasColumnName("concurrency_stamp");
+                entity.Property(e => e.PhoneNumber).HasColumnName("phone_number");
+                entity.Property(e => e.PhoneNumberConfirmed).HasColumnName("phone_number_confirmed");
+                entity.Property(e => e.TwoFactorEnabled).HasColumnName("two_factor_enabled");
+                entity.Property(e => e.LockoutEnabled).HasColumnName("lockout_enabled");
+                entity.Property(e => e.LockoutEnd).HasColumnName("lockout_end");
+                entity.Property(e => e.AccessFailedCount).HasColumnName("access_failed_count");
+                entity.Property(e => e.roleId).HasColumnName("role_id");
+
                 entity.HasOne(e => e.role)
                 .WithMany(r => r.users)
                 .HasForeignKey(e => e.roleId);
@@ -91,6 +110,15 @@ namespace AdvertisingAgency.Data
             modelBuilder.Entity<Model.Task>(entity =>
             {
                 entity.ToTable("tasks");
+
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.title).HasColumnName("title");
+                entity.Property(e => e.body).HasColumnName("body");
+                entity.Property(e => e.deadline).HasColumnName("deadline");
+                entity.Property(e => e.statusId).HasColumnName("status_id");
+                entity.Property(e => e.assignedUserId).HasColumnName("assigned_user_id");
+                entity.Property(e => e.campaignId).HasColumnName("campaign_id");
+
                 entity.HasOne(e => e.campaign)
                 .WithMany(c => c.tasks)
                 .HasForeignKey(e => e.campaignId);

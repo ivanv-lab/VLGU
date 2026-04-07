@@ -13,24 +13,29 @@ namespace AdvertisingAgency.Repository.Authorization
             this.context = context;
         }
 
-        public async Task<Role> get(int id)
+        public async Task<Role> get(string id)
         {
             return await context.roles
-                .Where(r => r.id == id)
-                .Include(r => r.users)
+                .Where(r => r.Id == id)
+                .FirstAsync();
+        }
+
+        public async Task<Role> getByName(string roleName)
+        {
+            return await context.roles
+                .Where(r => r.Name == roleName)
                 .FirstAsync();
         }
 
         public async Task<bool> isRoleExists(string name)
         {
             return await context.roles
-                .AnyAsync(r => r.name.Equals(name));
+                .AnyAsync(r => r.Name.Equals(name));
         }
         
         public async Task<List<Role>> getAll()
         {
             return await context.roles
-                .Include(r => r.users)
                 .ToListAsync();
         }
 
@@ -39,17 +44,17 @@ namespace AdvertisingAgency.Repository.Authorization
             await context.roles.AddAsync(role);
             await context.SaveChangesAsync();
 
-            return await get(role.id);
+            return await get(role.Id);
         }
 
-        public async Task<Role> update(int id, Role role)
+        public async Task<Role> update(string id, Role role)
         {
             Role existedRole = await get(id);
             if (existedRole != null)
             {
                 try
                 {
-                    existedRole.name = role.name;
+                    existedRole.Name = role.Name;
                     await context.SaveChangesAsync();
                     return await get(id);
                 }
@@ -61,7 +66,7 @@ namespace AdvertisingAgency.Repository.Authorization
             throw new Exception($"Role with id {id} not found");
         }
 
-        public async Task<bool> delete(int id)
+        public async Task<bool> delete(string id)
         {
             Role existedRole = await get(id);
             if (existedRole != null)

@@ -25,16 +25,17 @@ namespace AdvertisingAgency.Data
             Role adminRole=null;
             if (!await roleRepository.isRoleExists(adminRoleName))
             {
-                adminRole = await roleRepository.save(new Role(0, "Admin"));
+                adminRole = await roleRepository.save(new Role("Admin"));
             }
-            
-            User adminUser = await userRepository
-                .getByEmail(adminEmail);
-            if (adminUser == null)
+            else adminRole = await roleRepository.getByName(adminRoleName);
+
+            User adminUser = null;
+            if (!await userRepository.isUserExists(adminEmail))
             {
                 adminUser = await userRepository
-                    .save(new User(0, "Admin", adminEmail,
-                        authService.hashPassword(adminPassword), adminRole.id));
+                    .save(new User("Admin",adminEmail,
+                    authService.hashPassword(null, adminPassword),
+                    adminRole.Id));
             }
         }
     }

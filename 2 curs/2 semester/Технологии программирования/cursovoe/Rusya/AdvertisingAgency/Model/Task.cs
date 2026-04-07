@@ -10,7 +10,7 @@ namespace AdvertisingAgency.Model
         public DateOnly deadline { get; set; }
 
         public int statusId { get; set; }
-        public long assignedUserId { get; set; }
+        public string assignedUserId { get; set; }
         public long campaignId { get; set; }
 
         public TaskStatus taskStatus { get; set; }
