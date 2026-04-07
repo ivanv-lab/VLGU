@@ -21,12 +21,16 @@ public class AuthController:ControllerBase
     public async Task<ActionResult> login([FromBody] AuthContract
         contract)
     {
-        User user = await authService
-            .findUserByEmail(contract.email);
+        User user=null;
+        if (await authService.isUserExists(contract.email))
+        {
+            user = await authService
+                .findUserByEmail(contract.email);
 
-        if (user == null || !await authService
-                .checkPassword(user, contract.password))
-            return Unauthorized("Invalid credentials");
+            if (user == null || !await authService
+                    .checkPassword(user, contract.password))
+                return Unauthorized("Invalid credentials");
+        } else return Unauthorized("Invalid credentials");
 
         Role role = user.role;
         string token = authService

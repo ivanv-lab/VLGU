@@ -31,11 +31,14 @@ public class AuthService
             repository.getByEmail(email);
     }
 
+    public async Task<bool> isUserExists(string email)
+    {
+        return await
+            repository.isUserExists(email);
+    }
+
     public async Task<bool> checkPassword(User user, string password)
     {
-        //password = hashPassword(null,password);
-        //return user.PasswordHash
-        //    .Equals(password);
         var result = passwordHasher
             .VerifyHashedPassword(user, user.PasswordHash, password);
         if (result == PasswordVerificationResult.Success)
