@@ -102,8 +102,7 @@ namespace AdvertisingAgency.Data
             modelBuilder.Entity<Client>(entity =>
             {
                 entity.ToTable("clients");
-                entity.HasIndex(e => e.email).IsUnique();
-                entity.HasIndex(e => e.phone).IsUnique();
+                entity.HasIndex(e => e.name).IsUnique();
                 entity.Property(e => e.phone).HasMaxLength(11);
             });
 

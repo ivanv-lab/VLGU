@@ -26,10 +26,10 @@ role_id varchar(255) references roles(id)
 
 create table clients(
 id serial primary key,
-name varchar(255),
+name varchar(255) unique,
 contact_person_fullname varchar(255),
-email varchar(255) unique,
-phone varchar(11) unique,
+email varchar(255),
+phone varchar(11),
 address varchar(255)
 );
 

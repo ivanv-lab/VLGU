@@ -2,6 +2,7 @@ using System.Reflection;
 using System.Text;
 using AdvertisingAgency.Data;
 using AdvertisingAgency.Model.Authorization;
+using AdvertisingAgency.Repository;
 using AdvertisingAgency.Repository.Authorization;
 using AdvertisingAgency.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -54,6 +55,12 @@ public partial class Program
         builder.Services.AddScoped<AdvertisingDbContext>();
         builder.Services.AddTransient<RoleRepository>();
         builder.Services.AddTransient<UserRepository>();
+        builder.Services.AddTransient<TaskStatusRepository>();
+        builder.Services.AddTransient<TaskRepository>();
+        builder.Services.AddTransient<ClientRepository>();
+        builder.Services.AddTransient<CampaignStatusRepository>();
+        builder.Services.AddTransient<CampaignCategoryRepository>();
+        builder.Services.AddTransient<AdvertisingCampaignRepository>();
         builder.Services.AddTransient<AuthService>();
 
         builder.Services.AddEndpointsApiExplorer();
@@ -82,8 +89,6 @@ public partial class Program
 
             c.UseAllOfToExtendReferenceSchemas();
         });
-
-        //builder.Services.AddScoped<AdvertisingDbContext>();
 
         var app = builder.Build();
         using (var scope = app.Services.CreateScope())
