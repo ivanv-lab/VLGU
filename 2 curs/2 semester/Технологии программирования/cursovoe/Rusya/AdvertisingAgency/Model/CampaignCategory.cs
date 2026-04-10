@@ -6,5 +6,11 @@
         public string name { get; set; }
 
         public ICollection<AdvertisingCampaign> campaigns { get; set; }
+
+        public CampaignCategory(int id, string name)
+        {
+            this.id = id;
+            this.name = name;
+        }
     }
 }

@@ -16,5 +16,18 @@
         public CampaignStatus status { get; set; }
         public CampaignCategory category { get; set; }
         public ICollection<Task> tasks { get; set; }
+
+        public AdvertisingCampaign(long id, string name, string description, DateOnly startDate, DateOnly endDate, decimal budget, int statusId, int categoryId, long clientId)
+        {
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.startDate = startDate;
+            this.endDate = endDate;
+            this.budget = budget;
+            this.statusId = statusId;
+            this.categoryId = categoryId;
+            this.clientId = clientId;
+        }
     }
 }

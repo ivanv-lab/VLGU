@@ -47,7 +47,7 @@ public class CampaignStatusRepository
         return await get(campaignStatus.id);
     }
 
-    public async Task<CampaignStatus> updated(int id, CampaignStatus campaignStatus)
+    public async Task<CampaignStatus> update(int id, CampaignStatus campaignStatus)
     {
         CampaignStatus existedStatus = await get(id);
         if (existedStatus != null)

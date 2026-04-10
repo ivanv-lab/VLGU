@@ -16,5 +16,16 @@ namespace AdvertisingAgency.Model
         public TaskStatus taskStatus { get; set; }
         public User assignedUser { get; set; }
         public AdvertisingCampaign campaign { get; set; }
+
+        public Task(long id, string title, string body, DateOnly deadline, int statusId, string assignedUserId, long campaignId)
+        {
+            this.id = id;
+            this.title = title;
+            this.body = body;
+            this.deadline = deadline;
+            this.statusId = statusId;
+            this.assignedUserId = assignedUserId;
+            this.campaignId = campaignId;
+        }
     }
 }
