@@ -69,20 +69,24 @@ public class CampaignCategoryRepository
 
     public async Task<bool> delete(int id)
     {
-        CampaignCategory existedCategory = await get(id);
-        if (existedCategory != null)
+        try
         {
-            try
+            CampaignCategory existedCategory = await get(id);
+            if (existedCategory != null)
             {
-                context.Remove(existedCategory);
-                await context.SaveChangesAsync();
-                return true;
+                try
+                {
+                    context.Remove(existedCategory);
+                    await context.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return false;
         }
-        return false;
+        catch { return false; }
     }
 }

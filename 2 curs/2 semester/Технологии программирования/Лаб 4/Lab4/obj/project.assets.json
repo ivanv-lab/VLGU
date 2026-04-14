@@ -877,11 +877,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
+      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
       "projectName": "Lab4",
-      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
+      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
       "packagesPath": "C:\\Users\\ivanv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 4\\Lab4\\obj\\",
+      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 4\\Lab4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"

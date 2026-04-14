@@ -1,9 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\",
+  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\views\\clients\\createpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\dao\\clientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\clientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\dao\\projectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\projectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\lab5\\lab5\\views\\clients\\createpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CCE34639-900D-4AD6-A859-38D8192C0511}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\clients\\createpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -14,20 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Program.cs",
+              "RelativeDocumentMoniker": "Lab5\\Program.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Program.cs",
+              "RelativeToolTip": "Lab5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:51:30.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\Clients\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T19:23:27.886Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Lab5\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Lab5\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:10:40.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectDAO.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\ProjectDAO.cs",
+              "RelativeDocumentMoniker": "Lab5\\DAO\\ProjectDAO.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\ProjectDAO.cs",
+              "RelativeToolTip": "Lab5\\DAO\\ProjectDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T17:03:00.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientDAO.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\ClientDAO.cs",
+              "RelativeDocumentMoniker": "Lab5\\DAO\\ClientDAO.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\ClientDAO.cs",
+              "RelativeToolTip": "Lab5\\DAO\\ClientDAO.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:57:54.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DAO.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\DAO.cs",
+              "RelativeDocumentMoniker": "Lab5\\DAO\\DAO.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\DAO\\DAO.cs",
+              "RelativeToolTip": "Lab5\\DAO\\DAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:57:48.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CreatePage.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\Clients\\CreatePage.cshtml",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\Lab5\\Lab5\\Views\\Clients\\CreatePage.cshtml",
               "RelativeToolTip": "Lab5\\Views\\Clients\\CreatePage.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T17:37:10.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T17:37:10.457Z"
             }
           ]
         }

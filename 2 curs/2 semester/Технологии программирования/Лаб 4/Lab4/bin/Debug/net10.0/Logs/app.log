@@ -1,76 +1,10 @@
-﻿DEBUG [2026-03-16 22:17:47,947] [?.?] Middleware loaded
-DEBUG [2026-03-16 22:17:48,013] [?.?] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16493 B).
-DEBUG [2026-03-16 22:17:48,016] [?.?] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
-DEBUG [2026-03-16 22:17:48,138] [?.?] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
-INFO  [2026-03-16 22:17:48,266] [?.?] Now listening on: https://localhost:7179
-INFO  [2026-03-16 22:17:48,269] [?.?] Now listening on: http://localhost:5117
-INFO  [2026-03-16 22:17:48,590] [Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted] Application started. Press Ctrl+C to shut down.
-INFO  [2026-03-16 22:17:48,594] [Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted] Hosting environment: Development
-INFO  [2026-03-16 22:17:48,596] [System.Threading.ExecutionContext.RunInternal] Content root path: C:\Users\ivanv\Desktop\VLGU\2 курс\2 семестр\Технологии программирования\Лаб 4\Lab4
-DEBUG [2026-03-16 22:18:02,482] [Lab4.Controllers.ApplicationStatusController+<getAll>d__3.MoveNext] Routing GET:api/application_status
-DEBUG [2026-03-16 22:18:02,490] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
-DEBUG [2026-03-16 22:18:20,184] [Lab4.Controllers.ApplicationStatusController+<create>d__5.MoveNext] Routing POST:api/application_statusname: new type 3
-DEBUG [2026-03-16 22:18:20,187] [Lab4.Repository.Additional.ApplicationStatusRepository+<save>d__5.MoveNext] Save new 'ApplicationStatus':name: new type 3
-DEBUG [2026-03-16 22:18:20,465] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '9'
-DEBUG [2026-03-16 22:18:24,609] [Lab4.Controllers.ApplicationStatusController+<create>d__5.MoveNext] Routing POST:api/application_statusname: new type 3
-DEBUG [2026-03-16 22:18:24,610] [Lab4.Repository.Additional.ApplicationStatusRepository+<save>d__5.MoveNext] Save new 'ApplicationStatus':name: new type 3
-ERROR [2026-03-16 22:18:24,939] [Lab4.Controllers.ApplicationStatusController+<create>d__5.MoveNext] Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
- ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "application_statuses_name_key"
-
-DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
-   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
-   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
-   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
-   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
-   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
-   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
-   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
-  Exception data:
-    Severity: ERROR
-    SqlState: 23505
-    MessageText: duplicate key value violates unique constraint "application_statuses_name_key"
-    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
-    SchemaName: public
-    TableName: application_statuses
-    ConstraintName: application_statuses_name_key
-    File: nbtinsert.c
-    Line: 666
-    Routine: _bt_check_unique
-   --- End of inner exception stack trace ---
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
-   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
-   at Lab4.Repository.Additional.ApplicationStatusRepository.save(ApplicationStatus applicationStatus) in C:\Users\ivanv\Desktop\VLGU\2 курс\2 семестр\Технологии программирования\Лаб 4\Lab4\Repository\Additional\ApplicationStatusRepository.cs:line 43
-   at Lab4.Controllers.ApplicationStatusController.create(ApplicationStatusCreateContract createContract) in C:\Users\ivanv\Desktop\VLGU\2 курс\2 семестр\Технологии программирования\Лаб 4\Lab4\Controllers\ApplicationStatusController.cs:line 93
-DEBUG [2026-03-16 22:18:30,602] [Lab4.Controllers.ApplicationStatusController+<get>d__4.MoveNext] Routing GET:api/application_status/1
-DEBUG [2026-03-16 22:18:30,603] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '1'
-DEBUG [2026-03-16 22:18:39,958] [Lab4.Controllers.ApplicationStatusController+<get>d__4.MoveNext] Routing GET:api/application_status/7
-DEBUG [2026-03-16 22:18:39,958] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '7'
-DEBUG [2026-03-16 22:19:02,875] [Lab4.Controllers.ApplicationStatusController+<update>d__6.MoveNext] Routing PUT:api/application_status/7name: updated_type 3
-DEBUG [2026-03-16 22:19:02,891] [Lab4.Repository.Additional.ApplicationStatusRepository+<update>d__6.MoveNext] Update 'ApplicationStatus':id: 7,new name: updated_type 3
-DEBUG [2026-03-16 22:19:02,891] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '7'
-DEBUG [2026-03-16 22:19:02,919] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '7'
-DEBUG [2026-03-16 22:19:02,922] [Lab4.Controllers.ApplicationStatusController+<update>d__6.MoveNext] Founded updated 'ApplicationStatus':[id: 7, name: updated_type 3]
-DEBUG [2026-03-16 22:19:13,414] [Lab4.Controllers.ApplicationStatusController+<search>d__8.MoveNext] Routing GET:api/application_status/search?name=type
-DEBUG [2026-03-16 22:19:13,415] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
-DEBUG [2026-03-16 22:19:17,026] [Lab4.Controllers.ApplicationStatusController+<search>d__8.MoveNext] Routing GET:api/application_status/search?name=1
-DEBUG [2026-03-16 22:19:17,026] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
-DEBUG [2026-03-16 22:19:18,941] [Lab4.Controllers.ApplicationStatusController+<search>d__8.MoveNext] Routing GET:api/application_status/search?name=2
-DEBUG [2026-03-16 22:19:18,941] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
-DEBUG [2026-03-16 22:19:23,468] [Lab4.Controllers.ApplicationStatusController+<search>d__8.MoveNext] Routing GET:api/application_status/search?name=2
-DEBUG [2026-03-16 22:19:23,469] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
-DEBUG [2026-03-16 22:19:29,880] [Lab4.Controllers.ApplicationStatusController+<delete>d__7.MoveNext] Routing DELETE:api/application_status/6
-DEBUG [2026-03-16 22:19:29,882] [Lab4.Repository.Additional.ApplicationStatusRepository+<delete>d__7.MoveNext] Delete 'ApplicationStatus' by id = 6
-DEBUG [2026-03-16 22:19:29,882] [Lab4.Repository.Additional.ApplicationStatusRepository+<get>d__3.MoveNext] Get 'ApplicationStatus' by id = '6'
-DEBUG [2026-03-16 22:19:34,968] [Lab4.Controllers.ApplicationStatusController+<search>d__8.MoveNext] Routing GET:api/application_status/search?name=2
-DEBUG [2026-03-16 22:19:34,968] [Lab4.Repository.Additional.ApplicationStatusRepository+<getAll>d__4.MoveNext] Get All 'ApplicationStatus'
+﻿DEBUG [2026-04-06 23:11:52,314] [?.?] Middleware loaded
+DEBUG [2026-04-06 23:11:52,403] [?.?] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16493 B).
+DEBUG [2026-04-06 23:11:52,406] [?.?] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+DEBUG [2026-04-06 23:11:52,532] [?.?] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+INFO  [2026-04-06 23:11:52,679] [?.?] Now listening on: https://localhost:7179
+INFO  [2026-04-06 23:11:52,681] [?.?] Now listening on: http://localhost:5117
+INFO  [2026-04-06 23:11:53,015] [Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted] Application started. Press Ctrl+C to shut down.
+INFO  [2026-04-06 23:11:53,024] [Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted] Hosting environment: Development
+INFO  [2026-04-06 23:11:53,027] [System.Threading.ExecutionContext.RunInternal] Content root path: C:\Users\ivanv\Desktop\VLGU\2 curs\2 semester\Технологии программирования\Лаб 4\Lab4
+DEBUG [2026-04-06 23:12:00,392] [Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware+<InvokeAsync>d__5.MoveNext] Script injected: /_framework/aspnetcore-browser-refresh.js

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLN/uS0rjpc=",
+  "dgSpecHash": "Ip6R/PsDMH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
+  "projectFilePath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivanv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\ivanv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",

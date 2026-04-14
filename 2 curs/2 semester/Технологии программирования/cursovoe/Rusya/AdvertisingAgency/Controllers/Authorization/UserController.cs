@@ -2,6 +2,7 @@
 using AdvertisingAgency.Model.Authorization;
 using AdvertisingAgency.Repository.Authorization;
 using AdvertisingAgency.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdvertisingAgency.Controllers;
@@ -22,13 +23,24 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(IEnumerable<User>),
+    [Authorize(Roles = "Admin,Manager,Guest")]
+    [ProducesResponseType(typeof(IEnumerable<UserGetContract>),
         StatusCodes.Status200OK)]
-    public async Task<ActionResult<IEnumerable<User>>> getAll()
+    public async Task<ActionResult<IEnumerable<UserGetContract>>> getAll()
     {
         try
         {
-            return Ok(await repository.getAll());
+            IEnumerable<User> users = await repository.getAll();
+            IEnumerable<UserGetContract> userGetContracts = users.Select(user => new UserGetContract(
+                user.Id,
+                user.UserName,
+                user.Email,
+                user.roleId,
+                user.role.Name,
+                user.client?.id,
+                user.client?.name
+                ));
+            return Ok(userGetContracts);
         }
         catch (Exception ex)
         {
@@ -37,9 +49,10 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [ProducesResponseType(typeof(User),
+    [Authorize(Roles = "Admin,Manager")]
+    [ProducesResponseType(typeof(UserGetContract),
         StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<User>> get(string id)
+    public async Task<ActionResult<UserGetContract>> get(string id)
     {
         try
         {
@@ -47,7 +60,15 @@ public class UserController : ControllerBase
             if (user == null)
                 return NotFound($"User with id {id} not found");
 
-            return Ok(user);
+            return Ok(new UserGetContract(
+                user.Id,
+                user.UserName,
+                user.Email,
+                user.roleId,
+                user.role.Name,
+                user.client?.id,
+                user.client?.name
+                ));
         }
         catch (InvalidOperationException)
         {
@@ -60,6 +81,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<User>> create([FromBody] UserCreateContract userCreate)
@@ -76,10 +98,11 @@ public class UserController : ControllerBase
                 return BadRequest("User role id is required");
 
             User user = new User
-                (userCreate.fullname, 
-                userCreate.email, 
-                authService.hashPassword(null,userCreate.password),
-                userCreate.roleId);
+                (userCreate.fullname,
+                userCreate.email,
+                authService.hashPassword(null, userCreate.password),
+                userCreate.roleId,
+                userCreate.clientId);
             user = await repository.save(user);
 
             return CreatedAtAction(nameof(get),
@@ -92,6 +115,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -109,10 +133,12 @@ public class UserController : ControllerBase
                 return BadRequest("User role id is required");
 
             User updatedUser = await repository
-                .update(id, new User(userUpdate.fullname,
+                .update(id, new User(
+                userUpdate.fullname,
                 userUpdate.email,
-                authService.hashPassword(null,userUpdate.password),
-                userUpdate.roleId));
+                authService.hashPassword(null, userUpdate.password),
+                userUpdate.roleId,
+                userUpdate.clientId));
 
             if (updatedUser == null)
                 return NotFound($"User with id {id} not found");
@@ -130,6 +156,7 @@ public class UserController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<bool>> delete(string id)

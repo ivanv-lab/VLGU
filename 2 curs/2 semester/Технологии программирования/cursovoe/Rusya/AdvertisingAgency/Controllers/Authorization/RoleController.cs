@@ -20,13 +20,17 @@ namespace AdvertisingAgency.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        [ProducesResponseType(typeof(IEnumerable<Role>),
+        [ProducesResponseType(typeof(IEnumerable<RoleGetContract>),
             StatusCodes.Status200OK)]
-        public async Task<ActionResult<IEnumerable<Role>>> getAll()
+        public async Task<ActionResult<IEnumerable<RoleGetContract>>> getAll()
         {
             try
             {
-                return Ok(await repository.getAll());
+                IEnumerable<Role> roles = await repository.getAll();
+                return Ok(roles.Select(r => new RoleGetContract(
+                    r.Id,
+                    r.Name
+                    )));
             }
             catch (Exception ex)
             {
@@ -36,9 +40,9 @@ namespace AdvertisingAgency.Controllers
 
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin")]
-        [ProducesResponseType(typeof(Role),
+        [ProducesResponseType(typeof(RoleGetContract),
             StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<Role>> get(string id)
+        public async Task<ActionResult<RoleGetContract>> get(string id)
         {
             try
             {
@@ -46,7 +50,7 @@ namespace AdvertisingAgency.Controllers
                 if (role == null)
                     return NotFound($"Role with id {id} not found");
 
-                return Ok(role);
+                return Ok(new RoleGetContract(role.Id, role.Name));
             }
             catch(InvalidOperationException)
             {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OP1UidBjyEA=",
+  "dgSpecHash": "545+vCzDUF4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
+  "projectFilePath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 4\\Lab4\\Lab4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivanv\\.nuget\\packages\\log4net\\3.3.0\\log4net.3.3.0.nupkg.sha512",
     "C:\\Users\\ivanv\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",

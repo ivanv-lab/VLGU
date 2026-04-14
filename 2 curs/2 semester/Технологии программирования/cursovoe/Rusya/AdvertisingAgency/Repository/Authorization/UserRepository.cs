@@ -20,6 +20,7 @@ public class UserRepository
             .Where(u => u.Id == id)
             .Include(u => u.role)
             .Include(u => u.tasks)
+            .Include(u=>u.client)
             .FirstAsync();
     }
 
@@ -42,6 +43,7 @@ public class UserRepository
         return await context.users
             .Include(u => u.role)
             .Include(u => u.tasks)
+            .Include(u => u.client)
             .ToListAsync();
     }
 
@@ -64,6 +66,7 @@ public class UserRepository
                 existedUser.Email = user.Email;
                 existedUser.UserName = user.UserName;
                 existedUser.PasswordHash = user.PasswordHash;
+                existedUser.clientId = user.clientId;
                 await context.SaveChangesAsync();
                 return await get(id);
             }

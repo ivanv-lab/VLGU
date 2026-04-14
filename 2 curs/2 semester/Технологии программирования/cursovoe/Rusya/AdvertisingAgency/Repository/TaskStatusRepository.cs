@@ -69,22 +69,25 @@ namespace AdvertisingAgency.Repository
 
         public async Task<bool> delete(int id)
         {
-            TaskStatus existedStatus = await get(id);
-            if (existedStatus != null)
+            try
             {
-                try
+                TaskStatus existedStatus = await get(id);
+                if (existedStatus != null)
                 {
-                    context.Remove(existedStatus);
-                    await context.SaveChangesAsync();
-                    return true;
+                    try
+                    {
+                        context.Remove(existedStatus);
+                        await context.SaveChangesAsync();
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
-            }
 
-            return false;
+                return false;
+            } catch { return false; }
         }
     }
 }

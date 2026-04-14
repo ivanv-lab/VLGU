@@ -17,12 +17,18 @@ public class TaskRepository
     {
         return await context.tasks
             .Where(t => t.id == id)
+            .Include(t=>t.assignedUser)
+            .Include(t=>t.taskStatus)
+            .Include(t=>t.campaign)
             .FirstAsync();
     }
 
     public async Task<List<Task>> getAll()
     {
         return await context.tasks
+            .Include(t => t.assignedUser)
+            .Include(t => t.taskStatus)
+            .Include(t => t.campaign)
             .ToListAsync();
     }
 

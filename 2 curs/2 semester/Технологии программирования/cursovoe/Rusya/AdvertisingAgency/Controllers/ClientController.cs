@@ -1,7 +1,7 @@
 ﻿using AdvertisingAgency.Contract.Client;
 using AdvertisingAgency.Model;
 using AdvertisingAgency.Repository;
-using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdvertisingAgency.Controllers;
@@ -19,13 +19,23 @@ public class ClientController:ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(IEnumerable<Client>),
+    [Authorize(Roles = "Manager,Admin")]
+    [ProducesResponseType(typeof(IEnumerable<ClientGetContract>),
         StatusCodes.Status200OK)]
-    public async Task<ActionResult<IEnumerable<Client>>> getAll()
+    public async Task<ActionResult<IEnumerable<ClientGetContract>>> getAll()
     {
         try
         {
-            return Ok(await repository.getAll());
+            IEnumerable<Client> clients = await repository.getAll();
+            return Ok(clients.Select(client=>new ClientGetContract(
+                client.id,
+                client.name,
+                client.contactPersonFullname,
+                client.email,
+                client.phone,
+                client.address,
+                client.campaigns.Select(c=>c.name).ToList()
+                )));
         }
         catch (Exception ex)
         {
@@ -34,9 +44,10 @@ public class ClientController:ControllerBase
     }
 
     [HttpGet("{id}")]
-    [ProducesResponseType(typeof(Client),
+    [Authorize(Roles = "Manager,Admin")]
+    [ProducesResponseType(typeof(ClientGetContract),
         StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<Client>> get(long id)
+    public async Task<ActionResult<ClientGetContract>> get(long id)
     {
         try
         {
@@ -44,7 +55,15 @@ public class ClientController:ControllerBase
             if (client == null)
                 return NotFound($"Client with id {id} not found");
 
-            return Ok(client);
+            return Ok(new ClientGetContract(
+                client.id,
+                client.name,
+                client.contactPersonFullname,
+                client.email,
+                client.phone,
+                client.address,
+                client.campaigns.Select(c => c.name).ToList()
+                ));
         }
         catch (InvalidOperationException)
         {
@@ -57,6 +76,7 @@ public class ClientController:ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Manager")]
     [ProducesResponseType(typeof(Client),
         StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -88,6 +108,7 @@ public class ClientController:ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Manager")]
     [ProducesResponseType(typeof(Client), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -126,6 +147,7 @@ public class ClientController:ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Manager")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<bool>> delete(long id)

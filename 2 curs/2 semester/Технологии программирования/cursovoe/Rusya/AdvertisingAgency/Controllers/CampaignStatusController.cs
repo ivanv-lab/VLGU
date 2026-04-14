@@ -1,6 +1,7 @@
 ﻿using AdvertisingAgency.Contract.CampaignStatus;
 using AdvertisingAgency.Model;
 using AdvertisingAgency.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskStatus = AdvertisingAgency.Model.TaskStatus;
 
@@ -19,6 +20,7 @@ public class CampaignStatusController:ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Roles = "Admin,Manager")]
     [ProducesResponseType(typeof(IEnumerable<CampaignStatus>),
         StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<CampaignStatus>>> getAll()
@@ -34,6 +36,7 @@ public class CampaignStatusController:ControllerBase
     }
 
     [HttpGet("{id}")]
+    [Authorize(Roles = "Admin,Manager")]
     [ProducesResponseType(typeof(CampaignStatus),
         StatusCodes.Status404NotFound)]
     public async Task<ActionResult<CampaignStatus>> get(int id)
@@ -57,23 +60,23 @@ public class CampaignStatusController:ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(typeof(CampaignStatus), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<CampaignStatus>> create([FromBody] CampaignStatusCreateContract statusCreate)
     {
         try
         {
-            if (statusCreate == null)
-                return BadRequest("Campaign status data is null");
+            string error = await validateCampaignStatusContract(statusCreate);
 
-            if (string.IsNullOrEmpty(statusCreate.name))
-                return BadRequest("Campaign status name is required");
+            if (error == null)
+            {
+                CampaignStatus campaignStatus = new CampaignStatus(0, statusCreate.name);
+                await repository.save(campaignStatus);
 
-            CampaignStatus campaignStatus = new CampaignStatus(0, statusCreate.name);
-            await repository.save(campaignStatus);
-
-            return CreatedAtAction(nameof(get),
-                new { id = campaignStatus.id }, campaignStatus);
+                return Ok(campaignStatus);
+            }
+            else return BadRequest(error);
         }
         catch (Exception ex)
         {
@@ -82,6 +85,7 @@ public class CampaignStatusController:ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(typeof(CampaignStatus), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -90,19 +94,19 @@ public class CampaignStatusController:ControllerBase
     {
         try
         {
-            if (statusUpdate == null)
-                return BadRequest("Campaign status data is null");
+            string error = await validateCampaignStatusContract(statusUpdate);
 
-            if (string.IsNullOrEmpty(statusUpdate.name))
-                return BadRequest("Campaign status name is required");
+            if (error == null)
+            {
+                CampaignStatus updatedStatus = await repository
+                    .update(id, new CampaignStatus(id, statusUpdate.name));
 
-            CampaignStatus updatedStatus = await repository
-                .update(id, new CampaignStatus(id, statusUpdate.name));
+                if (updatedStatus == null)
+                    return NotFound($"Campaign status with id {id} not found");
 
-            if (updatedStatus == null)
-                return NotFound($"Campaign status with id {id} not found");
-
-            return Ok(updatedStatus);
+                return Ok(updatedStatus);
+            }
+            else return BadRequest(error);
         }
         catch (InvalidOperationException)
         {
@@ -115,6 +119,7 @@ public class CampaignStatusController:ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<bool>> delete(int id)
@@ -122,7 +127,7 @@ public class CampaignStatusController:ControllerBase
         try
         {
             bool result = await repository.delete(id);
-            if (result) return NoContent();
+            if (result) return Ok();
             else return NotFound($"Campaign status with id {id} not found");
         }
         catch (Exception ex)
@@ -130,4 +135,18 @@ public class CampaignStatusController:ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     } 
+
+    private async Task<string> validateCampaignStatusContract(CampaignStatusCreateContract contract)
+    {
+        if (contract == null)
+            return "Campaign status data is null";
+
+        if (string.IsNullOrEmpty(contract.name) || string.IsNullOrWhiteSpace(contract.name))
+            return "Campaign status name is required";
+
+        if (await repository.isStatusExists(contract.name))
+            return "This status is already exists";
+
+        return null;
+    }
 }

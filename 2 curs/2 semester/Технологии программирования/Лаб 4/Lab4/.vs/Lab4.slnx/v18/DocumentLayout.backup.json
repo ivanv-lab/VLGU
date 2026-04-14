@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\",
+  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\controllers\\applicationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:controllers\\applicationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\repository\\additional\\applicationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:repository\\additional\\applicationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\lab4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\lab4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:lab4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\log4net.config||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:log4net.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\lab4.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:lab4.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\lab4.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:lab4.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\repository\\additional\\applicationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:repository\\additional\\applicationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\controllers\\applicationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:controllers\\applicationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\data\\deandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:data\\deandbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u043B\u0430\u0431 4\\lab4\\model\\main\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1E4ED5-B3B0-BE7E-02EC-FF2AF45C22B2}|Lab4.csproj|solutionrelative:model\\main\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,94 +62,143 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-16T18:38:38.387Z",
+              "WhenOpened": "2026-04-06T20:06:03.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationStatusController.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Controllers\\ApplicationStatusController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApplicationStatusController.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Controllers\\ApplicationStatusController.cs",
-              "RelativeToolTip": "Controllers\\ApplicationStatusController.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAmwMYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T18:31:26.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationStatusRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Repository\\Additional\\ApplicationStatusRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Additional\\ApplicationStatusRepository.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Repository\\Additional\\ApplicationStatusRepository.cs",
-              "RelativeToolTip": "Repository\\Additional\\ApplicationStatusRepository.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwEsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T18:06:05.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "log4net.config",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
-              "RelativeDocumentMoniker": "log4net.config",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
-              "RelativeToolTip": "log4net.config",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-03-16T18:18:59.141Z",
+              "Title": "Lab4",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj",
+              "RelativeDocumentMoniker": "Lab4.csproj",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj",
+              "RelativeToolTip": "Lab4.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-06T20:05:49.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T18:15:39.338Z",
+              "Title": "Lab4.csproj.Backup.tmp",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj.Backup.tmp",
+              "RelativeDocumentMoniker": "Lab4.csproj.Backup.tmp",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj.Backup.tmp",
+              "RelativeToolTip": "Lab4.csproj.Backup.tmp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-06T20:05:30.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Lab4",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj",
-              "RelativeDocumentMoniker": "Lab4.csproj",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.csproj",
-              "RelativeToolTip": "Lab4.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-16T18:24:32.336Z",
+              "DocumentIndex": 3,
+              "Title": "Lab4.http",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.http",
+              "RelativeDocumentMoniker": "Lab4.http",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Lab4.http",
+              "RelativeToolTip": "Lab4.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-04-06T20:05:27.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "log4net.config",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
+              "RelativeDocumentMoniker": "log4net.config",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
+              "RelativeToolTip": "log4net.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-06T20:05:26.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "log4net.config",
-              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
-              "RelativeDocumentMoniker": "log4net.config",
-              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 \u043A\u0443\u0440\u0441\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\log4net.config",
-              "RelativeToolTip": "log4net.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-03-16T18:01:00.801Z",
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-06T19:57:17.85Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Controllers\\ApplicationStatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationStatusController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Controllers\\ApplicationStatusController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationStatusController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwKsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T14:25:47.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABcAAADA/UY7bqgRwDAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T10:50:18.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationStatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Repository\\Additional\\ApplicationStatusRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Additional\\ApplicationStatusRepository.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Repository\\Additional\\ApplicationStatusRepository.cs",
+              "RelativeToolTip": "Repository\\Additional\\ApplicationStatusRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T13:51:53.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Model\\Main\\Application.cs",
+              "RelativeDocumentMoniker": "Model\\Main\\Application.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Model\\Main\\Application.cs",
+              "RelativeToolTip": "Model\\Main\\Application.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T09:15:19.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeanDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Data\\DeanDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\DeanDbContext.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\\u041B\u0430\u0431 4\\Lab4\\Data\\DeanDbContext.cs",
+              "RelativeToolTip": "Data\\DeanDbContext.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T09:07:01.849Z"
             }
           ]
         }

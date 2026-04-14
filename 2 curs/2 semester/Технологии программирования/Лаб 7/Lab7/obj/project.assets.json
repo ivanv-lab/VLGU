@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 7\\Lab7\\Lab7.csproj",
+      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 7\\Lab7\\Lab7.csproj",
       "projectName": "Lab7",
-      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 7\\Lab7\\Lab7.csproj",
+      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 7\\Lab7\\Lab7.csproj",
       "packagesPath": "C:\\Users\\ivanv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\2 семестр\\Технологии программирования\\Лаб 7\\Lab7\\obj\\",
+      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\Технологии программирования\\Лаб 7\\Lab7\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,5 +1,6 @@
 ﻿using AdvertisingAgency.Contract.TaskStatus;
 using AdvertisingAgency.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskStatus = AdvertisingAgency.Model.TaskStatus;
 
@@ -8,7 +9,7 @@ namespace AdvertisingAgency.Controllers
     [ApiController]
     [Route("api/task/statuses")]
     [Produces("application/json")]
-    public class TaskStatusController: ControllerBase
+    public class TaskStatusController : ControllerBase
     {
         private readonly TaskStatusRepository repository;
 
@@ -18,6 +19,7 @@ namespace AdvertisingAgency.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Manager")]
         [ProducesResponseType(typeof(IEnumerable<TaskStatus>),
             StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<TaskStatus>>> getAll()
@@ -33,6 +35,7 @@ namespace AdvertisingAgency.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Manager")]
         [ProducesResponseType(typeof(TaskStatus),
             StatusCodes.Status404NotFound)]
         public async Task<ActionResult<TaskStatus>> get(int id)
@@ -56,6 +59,7 @@ namespace AdvertisingAgency.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ProducesResponseType(typeof(TaskStatus),
             StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -63,17 +67,16 @@ namespace AdvertisingAgency.Controllers
         {
             try
             {
-                if (taskStatusCreate == null)
-                    return BadRequest("Task status data is null");
+                string error = await validateTaskStatusContract(taskStatusCreate);
 
-                if (string.IsNullOrEmpty(taskStatusCreate.name))
-                    return BadRequest("Task status name is required");
+                if (error == null)
+                {
+                    TaskStatus taskStatus = new TaskStatus(0, taskStatusCreate.name);
+                    taskStatus = await repository.save(taskStatus);
 
-                TaskStatus taskStatus = new TaskStatus(0, taskStatusCreate.name);
-                taskStatus = await repository.save(taskStatus);
-
-                return CreatedAtAction(nameof(get),
-                    new { id = taskStatus.id }, taskStatus);
+                    return Ok(taskStatus);
+                }
+                else return BadRequest(error);
             }
             catch (Exception ex)
             {
@@ -82,6 +85,7 @@ namespace AdvertisingAgency.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         [ProducesResponseType(typeof(TaskStatus), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -89,19 +93,19 @@ namespace AdvertisingAgency.Controllers
         {
             try
             {
-                if (taskStatusUpdate == null)
-                    return BadRequest("Task status data is null");
+                string error = await validateTaskStatusContract(taskStatusUpdate);
 
-                if (string.IsNullOrEmpty(taskStatusUpdate.name))
-                    return BadRequest("Task status name is required");
+                if (error == null)
+                {
+                    TaskStatus updatedTaskStatus = await repository
+                        .update(id, new TaskStatus(id, taskStatusUpdate.name));
 
-                TaskStatus updatedTaskStatus = await repository
-                    .update(id, new TaskStatus(id, taskStatusUpdate.name));
+                    if (updatedTaskStatus == null)
+                        return NotFound($"Task status with id {id} not found");
 
-                if (updatedTaskStatus == null)
-                    return NotFound($"Task status with id {id} not found");
-
-                return Ok(updatedTaskStatus);
+                    return Ok(updatedTaskStatus);
+                }
+                else return BadRequest(error);
             }
             catch (InvalidOperationException)
             {
@@ -114,6 +118,7 @@ namespace AdvertisingAgency.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<bool>> delete(int id)
@@ -122,7 +127,7 @@ namespace AdvertisingAgency.Controllers
             {
                 bool result = await repository.delete(id);
                 if (result)
-                    return NoContent();
+                    return Ok();
                 else
                     return NotFound($"Task status with id {id} not found");
             }
@@ -130,6 +135,20 @@ namespace AdvertisingAgency.Controllers
             {
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
+        }
+
+        private async Task<string> validateTaskStatusContract(TaskStatusCreateContract contract)
+        {
+            if (contract == null)
+                return "Task status data is null";
+
+            if (string.IsNullOrEmpty(contract.name) || string.IsNullOrWhiteSpace(contract.name))
+                return "Task status name is required";
+
+            if (await repository.isTaskStatusExists(contract.name))
+                return "This status is already exists";
+
+            return null;
         }
     }
 }

@@ -32,6 +32,7 @@ public class ClientRepository
     public async Task<List<Client>> getAll()
     {
         return await context.clients
+            .Include(c => c.campaigns)
             .ToListAsync();
     }
 

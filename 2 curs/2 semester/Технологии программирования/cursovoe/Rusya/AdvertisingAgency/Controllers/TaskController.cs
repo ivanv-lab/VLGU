@@ -1,5 +1,6 @@
 ﻿using AdvertisingAgency.Contract.Task;
 using AdvertisingAgency.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Task = AdvertisingAgency.Model.Task;
 
@@ -18,13 +19,23 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(IEnumerable<Task>),
+    [Authorize(Roles = "Manager")]
+    [ProducesResponseType(typeof(IEnumerable<TaskGetContract>),
         StatusCodes.Status200OK)]
-    public async Task<ActionResult<IEnumerable<Task>>> getAll()
+    public async Task<ActionResult<IEnumerable<TaskGetContract>>> getAll()
     {
         try
         {
-            return Ok(await repository.getAll());
+            IEnumerable<Task> tasks = await repository.getAll();
+            return Ok(tasks.Select(t=>new TaskGetContract(
+                t.id,
+                t.title,
+                t.body,
+                t.deadline,
+                t.taskStatus.name,
+                t.assignedUser.UserName,
+                t.campaign==null?null:t.campaign.name
+                )));
         }
         catch (Exception ex)
         {
@@ -33,9 +44,10 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [ProducesResponseType(typeof(Task),
+    [Authorize(Roles = "Manager,Guest")]
+    [ProducesResponseType(typeof(TaskGetContract),
         StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<Task>> get(long id)
+    public async Task<ActionResult<TaskGetContract>> get(long id)
     {
         try
         {
@@ -43,7 +55,9 @@ public class TaskController : ControllerBase
             if (task == null)
                 return NotFound($"Task with id {id} not found");
 
-            return Ok(task);
+            return Ok(new TaskGetContract(task.id, task.title,
+                task.body,task.deadline,task.taskStatus.name,
+                task.assignedUser.UserName,task.campaign.name));
         }
         catch (InvalidOperationException)
         {
@@ -56,9 +70,10 @@ public class TaskController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(typeof(Task), StatusCodes.Status200OK)]
+    [Authorize(Roles = "Manager")]
+    [ProducesResponseType(typeof(TaskGetContract), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<Task>> create([FromBody] TaskCreateContract taskCreate)
+    public async Task<ActionResult<TaskGetContract>> create([FromBody] TaskCreateContract taskCreate)
     {
         try
         {
@@ -75,8 +90,15 @@ public class TaskController : ControllerBase
                     taskCreate.campaignId);
                 task = await repository.save(task);
 
-                return CreatedAtAction(nameof(get),
-                    new { id = task.id }, task);
+                return Ok(new TaskGetContract(
+                    task.id,
+                    task.title,
+                    task.body,
+                    task.deadline,
+                    task.taskStatus.name,
+                    task.assignedUser.UserName,
+                    task.campaign.name
+                    ));
             }
             else return BadRequest(error);
         }
@@ -87,10 +109,11 @@ public class TaskController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    [ProducesResponseType(typeof(Task), StatusCodes.Status200OK)]
+    [Authorize(Roles = "Manager")]
+    [ProducesResponseType(typeof(TaskGetContract), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<Task>> update(long id,
+    public async Task<ActionResult<TaskGetContract>> update(long id,
         [FromBody] TaskCreateContract taskUpdate)
     {
         try
@@ -99,7 +122,7 @@ public class TaskController : ControllerBase
 
             if (error == null)
             {
-                Task updatedStatus = await repository
+                Task updatedTask = await repository
                     .update(id, new Task(id,
                         taskUpdate.title,
                         taskUpdate.body,
@@ -108,10 +131,18 @@ public class TaskController : ControllerBase
                         taskUpdate.assignedUserId,
                         taskUpdate.campaignId));
 
-                if (updatedStatus == null)
+                if (updatedTask == null)
                     return NotFound($"Task with id {id} not found");
 
-                return Ok(updatedStatus);
+                return Ok(new TaskGetContract(
+                    updatedTask.id,
+                    updatedTask.title,
+                    updatedTask.body,
+                    updatedTask.deadline,
+                    updatedTask.taskStatus.name,
+                    updatedTask.assignedUser.UserName,
+                    updatedTask.campaign.name
+                    ));
             }
             else return BadRequest(error);
         }
@@ -126,6 +157,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Manager")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<bool>> delete(long id)

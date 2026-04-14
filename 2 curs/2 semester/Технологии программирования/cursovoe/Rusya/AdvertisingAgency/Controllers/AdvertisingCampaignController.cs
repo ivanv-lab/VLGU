@@ -1,6 +1,7 @@
 ﻿using AdvertisingAgency.Contract.AdvertisingCampaign;
 using AdvertisingAgency.Model;
 using AdvertisingAgency.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Task = System.Threading.Tasks.Task;
 
@@ -19,13 +20,26 @@ public class AdvertisingCampaignController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(IEnumerable<AdvertisingCampaign>),
+    [Authorize(Roles = "Manager,Admin,Guest")]
+    [ProducesResponseType(typeof(IEnumerable<AdvertisingCampaignGetContract>),
         StatusCodes.Status200OK)]
-    public async Task<ActionResult<IEnumerable<AdvertisingCampaign>>> getAll()
+    public async Task<ActionResult<IEnumerable<AdvertisingCampaignGetContract>>> getAll()
     {
         try
         {
-            return Ok(await repository.getAll());
+            IEnumerable<AdvertisingCampaign> advertisingCampaigns = await repository.getAll();
+            return Ok(advertisingCampaigns.Select(ac=>new AdvertisingCampaignGetContract(
+                ac.id,
+                ac.name,
+                ac.description,
+                ac.startDate,
+                ac.endDate,
+                ac.budget,
+                ac.status.name,
+                ac.category.name,
+                ac.client.name,
+                ac.tasks.Select(t=>t.title).ToList()
+                )));
         }
         catch (Exception ex)
         {
@@ -34,9 +48,10 @@ public class AdvertisingCampaignController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [ProducesResponseType(typeof(AdvertisingCampaign),
+    [Authorize(Roles = "Manager,Guest,Admin")]
+    [ProducesResponseType(typeof(AdvertisingCampaignGetContract),
         StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<AdvertisingCampaign>> get(long id)
+    public async Task<ActionResult<AdvertisingCampaignGetContract>> get(long id)
     {
         try
         {
@@ -45,7 +60,18 @@ public class AdvertisingCampaignController : ControllerBase
             if (advertisingCampaign == null)
                 return NotFound($"Advertising campaign with id {id} not found");
 
-            return Ok(advertisingCampaign);
+            return Ok(new AdvertisingCampaignGetContract(
+                advertisingCampaign.id,
+                advertisingCampaign.name,
+                advertisingCampaign.description,
+                advertisingCampaign.startDate,
+                advertisingCampaign.endDate,
+                advertisingCampaign.budget,
+                advertisingCampaign.status.name,
+                advertisingCampaign.category.name,
+                advertisingCampaign.client.name,
+                advertisingCampaign.tasks.Select(t => t.title).ToList()
+                ));
         }
         catch (InvalidOperationException)
         {
@@ -58,9 +84,10 @@ public class AdvertisingCampaignController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(typeof(AdvertisingCampaign), StatusCodes.Status200OK)]
+    [Authorize(Roles = "Manager")]
+    [ProducesResponseType(typeof(AdvertisingCampaignGetContract), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<AdvertisingCampaign>> create(
+    public async Task<ActionResult<AdvertisingCampaignGetContract>> create(
         [FromBody] AdvertisingCampaignCreateContract campaignCreate)
     {
         try
@@ -80,8 +107,18 @@ public class AdvertisingCampaignController : ControllerBase
                     campaignCreate.clientId);
                 campaign = await repository.save(campaign);
 
-                return CreatedAtAction(nameof(get),
-                    new { id = campaign.id }, campaign);
+                return Ok(new AdvertisingCampaignGetContract(
+                    campaign.id,
+                    campaign.name,
+                    campaign.description,
+                    campaign.startDate,
+                    campaign.endDate,
+                    campaign.budget,
+                    campaign.status.name,
+                    campaign.category.name,
+                    campaign.client.name,
+                    campaign.tasks.Select(t => t.title).ToList()
+                    ));
             }
             else return BadRequest(error);
         }
@@ -92,10 +129,11 @@ public class AdvertisingCampaignController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    [ProducesResponseType(typeof(AdvertisingCampaign), StatusCodes.Status200OK)]
+    [Authorize(Roles = "Manager")]
+    [ProducesResponseType(typeof(AdvertisingCampaignGetContract), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<AdvertisingCampaign>> update(long id,
+    public async Task<ActionResult<AdvertisingCampaignGetContract>> update(long id,
         [FromBody] AdvertisingCampaignCreateContract campaignUpdate)
     {
         try
@@ -118,7 +156,18 @@ public class AdvertisingCampaignController : ControllerBase
                 if (updatedCampaign == null)
                     return NotFound($"Advertising campaign with id {id} not found");
 
-                return Ok(updatedCampaign);
+                return Ok(new AdvertisingCampaignGetContract(
+                    updatedCampaign.id,
+                    updatedCampaign.name,
+                    updatedCampaign.description,
+                    updatedCampaign.startDate,
+                    updatedCampaign.endDate,
+                    updatedCampaign.budget,
+                    updatedCampaign.status.name,
+                    updatedCampaign.category.name,
+                    updatedCampaign.client.name,
+                    updatedCampaign.tasks.Select(t=>t.title).ToList()
+                    ));
             }
             else return BadRequest(error);
         }
@@ -133,6 +182,7 @@ public class AdvertisingCampaignController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Manager")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<bool>> delete(long id)

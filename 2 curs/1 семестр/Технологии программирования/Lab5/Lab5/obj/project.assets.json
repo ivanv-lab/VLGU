@@ -191,11 +191,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
+      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
       "projectName": "Lab5",
-      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
+      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\Lab5.csproj",
       "packagesPath": "C:\\Users\\ivanv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\obj\\",
+      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Lab5\\Lab5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"

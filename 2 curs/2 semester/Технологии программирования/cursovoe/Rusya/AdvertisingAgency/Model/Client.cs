@@ -1,4 +1,6 @@
-﻿namespace AdvertisingAgency.Model
+﻿using System.Text.Json.Serialization;
+
+namespace AdvertisingAgency.Model
 {
     public class Client
     {
@@ -9,6 +11,7 @@
         public string phone { get; set; }
         public string address { get; set; }
 
+        [JsonIgnore]
         public ICollection<AdvertisingCampaign> campaigns { get; set; }
 
         public Client(long id, string name, string contactPersonFullname, string email, string phone, string address)

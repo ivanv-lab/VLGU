@@ -5205,11 +5205,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\Lab6.csproj",
+      "projectUniqueName": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\Lab6.csproj",
       "projectName": "Lab6",
-      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\Lab6.csproj",
+      "projectPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\Lab6.csproj",
       "packagesPath": "C:\\Users\\ivanv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 курс\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\obj\\",
+      "outputPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\1 семестр\\Технологии программирования\\Rusya\\Lab6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5293,7 +5293,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

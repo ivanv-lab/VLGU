@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\authorization\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\authorization\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\advertisingcampaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\advertisingcampaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\repository\\advertisingcampaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:repository\\advertisingcampaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\taskstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\taskstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\campaignstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\campaignstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\authorization\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\authorization\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|c:\\users\\ivanv\\desktop\\vlgu\\2 curs\\2 semester\\\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\rusya\\advertisingagency\\controllers\\authorization\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7EE344-D19D-5C92-167A-1CAA8F051D76}|AdvertisingAgency.csproj|solutionrelative:controllers\\authorization\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdvertisingCampaignController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\AdvertisingCampaignController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdvertisingCampaignController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\AdvertisingCampaignController.cs",
+              "RelativeToolTip": "Controllers\\AdvertisingCampaignController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:53:41.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Controllers\\ClientController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:54:23.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdvertisingCampaignRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Repository\\AdvertisingCampaignRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AdvertisingCampaignRepository.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Repository\\AdvertisingCampaignRepository.cs",
+              "RelativeToolTip": "Repository\\AdvertisingCampaignRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:57:42.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Authorization\\UserController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\UserController.cs",
+              "RelativeToolTip": "Controllers\\Authorization\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:53:26.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\TaskStatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskStatusController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\TaskStatusController.cs",
+              "RelativeToolTip": "Controllers\\TaskStatusController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAmwHgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:54:45.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CampaignStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\CampaignStatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CampaignStatusController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\CampaignStatusController.cs",
+              "RelativeToolTip": "Controllers\\CampaignStatusController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwHkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:54:11.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Controllers\\TaskController.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAmwJ8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:54:34.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\RoleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Authorization\\RoleController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\RoleController.cs",
+              "RelativeToolTip": "Controllers\\Authorization\\RoleController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwHwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:53:12.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Authorization\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ivanv\\Desktop\\VLGU\\2 curs\\2 semester\\\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\cursovoe\\Rusya\\AdvertisingAgency\\Controllers\\Authorization\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\Authorization\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:53:11.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

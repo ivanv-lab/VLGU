@@ -40,6 +40,21 @@ public class AdvertisingCampaignRepository
     public async Task<List<AdvertisingCampaign>> getAll()
     {
         return await context.advertisingCampaigns
+            .Include(ac => ac.client)
+            .Include(ac => ac.category)
+            .Include(ac => ac.status)
+            .Include(ac => ac.tasks)
+            .ToListAsync();
+    }
+
+    public async Task<List<AdvertisingCampaign>> getByClientId(long clientId)
+    {
+        return await context.advertisingCampaigns
+            .Where(ac=>ac.clientId == clientId)
+            .Include(ac => ac.client)
+            .Include(ac => ac.category)
+            .Include(ac => ac.status)
+            .Include(ac => ac.tasks)
             .ToListAsync();
     }
 

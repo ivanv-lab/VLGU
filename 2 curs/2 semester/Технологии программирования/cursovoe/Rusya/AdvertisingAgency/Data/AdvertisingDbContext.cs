@@ -63,14 +63,29 @@ namespace AdvertisingAgency.Data
                 entity.Property(e => e.LockoutEnd).HasColumnName("lockout_end");
                 entity.Property(e => e.AccessFailedCount).HasColumnName("access_failed_count");
                 entity.Property(e => e.roleId).HasColumnName("role_id");
+                entity.Property(e => e.clientId).HasColumnName("client_id");
 
                 entity.HasOne(e => e.role)
                 .WithMany(r => r.users)
                 .HasForeignKey(e => e.roleId);
+
+                //entity.HasMany(e => e.tasks)
+                //.WithOne(e => e.assignedUser)
+                //.HasForeignKey(e => e.assignedUserId);
             });
 
             modelBuilder.Entity<AdvertisingCampaign>(entity =>
             {
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.name).HasColumnName("name");
+                entity.Property(e => e.description).HasColumnName("description");
+                entity.Property(e => e.startDate).HasColumnName("start_date");
+                entity.Property(e => e.endDate).HasColumnName("end_date");
+                entity.Property(e => e.budget).HasColumnName("budget");
+                entity.Property(e => e.statusId).HasColumnName("status_id");
+                entity.Property(e => e.categoryId).HasColumnName("category_id");
+                entity.Property(e => e.clientId).HasColumnName("client_id");
+
                 entity.ToTable("advertising_campaigns");
                 entity.HasIndex(e => e.name).IsUnique();
 
@@ -89,18 +104,31 @@ namespace AdvertisingAgency.Data
 
             modelBuilder.Entity<CampaignCategory>(entity =>
             {
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.name).HasColumnName("name");
+
                 entity.ToTable("campaign_categories");
                 entity.HasIndex(e => e.name).IsUnique();
             });
 
             modelBuilder.Entity<CampaignStatus>(entity =>
             {
-                entity.ToTable("campaig_statuses");
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.name).HasColumnName("name");
+
+                entity.ToTable("campaign_statuses");
                 entity.HasIndex(e => e.name).IsUnique();
             });
 
             modelBuilder.Entity<Client>(entity =>
             {
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.name).HasColumnName("name");
+                entity.Property(e => e.contactPersonFullname).HasColumnName("contact_person_fullname");
+                entity.Property(e => e.email).HasColumnName("email");
+                entity.Property(e => e.phone).HasColumnName("phone");
+                entity.Property(e => e.address).HasColumnName("address");
+
                 entity.ToTable("clients");
                 entity.HasIndex(e => e.name).IsUnique();
                 entity.Property(e => e.phone).HasMaxLength(11);
@@ -131,6 +159,9 @@ namespace AdvertisingAgency.Data
 
             modelBuilder.Entity<Model.TaskStatus>(entity =>
             {
+                entity.Property(e => e.id).HasColumnName("id");
+                entity.Property(e => e.name).HasColumnName("name");
+
                 entity.ToTable("task_statuses");
                 entity.HasIndex(e => e.name).IsUnique();
             });

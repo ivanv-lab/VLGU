@@ -35,8 +35,14 @@ namespace AdvertisingAgency.Data
                 adminUser = await userRepository
                     .save(new User("Admin",adminEmail,
                     authService.hashPassword(null, adminPassword),
-                    adminRole.Id));
+                    adminRole.Id, 0));
             }
+
+            if (!await roleRepository.isRoleExists("Manager"))
+                await roleRepository.save(new Role("Manager"));
+
+            if (!await roleRepository.isRoleExists("Guest"))
+                await roleRepository.save(new Role("Guest"));
         }
     }
 }
