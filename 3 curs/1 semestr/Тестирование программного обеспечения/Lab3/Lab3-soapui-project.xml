@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="83866265-28a0-49a3-8d99-942e4e261d35" activeEnvironment="Default" name="Lab3" resourceRoot="" soapui-version="5.10.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="3f91949a-7339-4329-b04d-815bacb64b76" wsaVersion="NONE" name="TransactionWSDLBinding" type="wsdl" bindingName="{http://bank/TransactionWSDL}TransactionWSDLBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/ivanv/Desktop/VLGU/3%20curs/1%20semestr/Тестирование%20программного%20обеспечения/Lab3/TransactionWSDL.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\ivanv\Desktop\VLGU\3%20curs\1%20semestr\Тестирование%20программного%20обеспечения\Lab3\TransactionWSDL.wsdl"><con:part><con:url>file:\C:\Users\ivanv\Desktop\VLGU\3%20curs\1%20semestr\Тестирование%20программного%20обеспечения\Lab3\TransactionWSDL.wsdl</con:url><con:content><![CDATA[<definitions name="TransactionWSDL" targetNamespace="http://bank/TransactionWSDL" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bank/TransactionWSDL" xmlns:ns="http://bank/schema/WSCommonTypes" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema targetNamespace="http://bank/TransactionWSDL">
+      <xsd:import namespace="http://bank/schema/WSCommonTypes" schemaLocation="WSCommonTypes.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="CheckAccountRequest">
+    <part name="CheckAccountRequest" element="ns:CheckAccountRequest"/>
+  </message>
+  <message name="CheckAccountResponse">
+    <part name="CheckAccountResponse" element="ns:CheckAccountResponse"/>
+  </message>
+  <message name="TransactRequest">
+    <part name="TransactRequest" element="ns:TransactRequest"/>
+  </message>
+  <message name="TransactResponse">
+    <part name="TransactResponse" element="ns:TransactResponse"/>
+  </message>
+  <message name="ErrorResponse">
+    <part name="ErrorResponse" element="ns:ErrorResponse"/>
+  </message>
+  <portType name="TransactionWSDLPortType">
+    <operation name="CheckAccount">
+      <input name="input1" message="tns:CheckAccountRequest"/>
+      <output name="output1" message="tns:CheckAccountResponse"/>
+      <fault name="fault1" message="tns:ErrorResponse"/>
+    </operation>
+    <operation name="Transact">
+      <input name="input2" message="tns:TransactRequest"/>
+      <output name="output2" message="tns:TransactResponse"/>
+      <fault name="fault2" message="tns:ErrorResponse"/>
+    </operation>
+  </portType>
+  <binding name="TransactionWSDLBinding" type="tns:TransactionWSDLPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="CheckAccount">
+      <soap:operation/>
+      <input name="input1">
+        <soap:body use="literal"/>
+      </input>
+      <output name="output1">
+        <soap:body use="literal"/>
+      </output>
+      <fault name="fault1">
+        <soap:fault name="fault1" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="Transact">
+      <soap:operation/>
+      <input name="input2">
+        <soap:body use="literal"/>
+      </input>
+      <output name="output2">
+        <soap:body use="literal"/>
+      </output>
+      <fault name="fault2">
+        <soap:fault name="fault2" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="TransactionWSDLService">
+    <port name="TransactionWSDLPort" binding="tns:TransactionWSDLBinding">
+      <soap:address location="http://localhost:/TransactionWSDLService/TransactionWSDLPort"/>
+    </port>
+  </service>
+  <plnk:partnerLinkType name="TransactionWSDL">
+    <plnk:role name="TransactionWSDLPortTypeRole" portType="tns:TransactionWSDLPortType"/>
+  </plnk:partnerLinkType>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\ivanv\Desktop\VLGU\3%20curs\1%20semestr\Тестирование%20программного%20обеспечения\Lab3\WSCommonTypes.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://bank/schema/WSCommonTypes" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bank/schema/WSCommonTypes">
+  <xsd:element name="CheckAccountRequest" type="tns:CheckAccountRequest"/>
+  <xsd:element name="CheckAccountResponse" type="tns:CheckAccountResponse"/>
+  <xsd:element name="TransactRequest" type="tns:TransactRequest"/>
+  <xsd:element name="TransactResponse" type="tns:TransactResponse"/>
+  <xsd:element name="ErrorResponse" type="tns:ErrorResponse"/>
+  <xsd:complexType name="CheckAccountRequest">
+    <xsd:sequence>
+      <xsd:element name="AccountNumber" type="xsd:string"/>
+      <xsd:element name="Name" type="xsd:string"/>
+      <xsd:element name="Surname" type="xsd:string"/>
+      <xsd:element name="Passport" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CheckAccountResponse">
+    <xsd:sequence>
+      <xsd:element name="AccountNumber" type="xsd:string"/>
+      <xsd:element name="Status" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TransactRequest">
+    <xsd:sequence>
+      <xsd:element name="AccountNumber" type="xsd:string"/>
+      <xsd:element name="Sum" type="xsd:decimal"/>
+      <xsd:element name="Target" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TransactResponse">
+    <xsd:sequence>
+      <xsd:element name="TransactionId" type="xsd:string"/>
+      <xsd:element name="TransactionStatus" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ErrorResponse">
+    <xsd:sequence>
+      <xsd:element name="ErrorCode" type="xsd:string"/>
+      <xsd:element name="ErrorString" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://DESKTOP-SQODI7U:8088/mockTransactionWSDLBinding</con:endpoint><con:endpoint>http://localhost:/TransactionWSDLService/TransactionWSDLPort</con:endpoint></con:endpoints><con:operation id="e20936d1-93dc-4296-ab27-e4c92b20f99b" isOneWay="false" action="" name="CheckAccount" bindingOperationName="CheckAccount" type="Request-Response" outputName="output1" inputName="input1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0f54eff3-6e6d-4ae3-b50a-9c8a7abd7b09" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://DESKTOP-SQODI7U:8088/mockTransactionWSDLBinding</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <wsc:CheckAccountRequest>\r
+         <wsc:AccountNumber>666666666</wsc:AccountNumber>\r
+         <wsc:Name>Иван</wsc:Name>\r
+         <wsc:Surname>Возисов</wsc:Surname>\r
+         <wsc:Passport>17 18 1920212</wsc:Passport>\r
+      </wsc:CheckAccountRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/input1"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f79b23d9-1a7f-4661-b48c-720976697a08" isOneWay="false" action="" name="Transact" bindingOperationName="Transact" type="Request-Response" outputName="output2" inputName="input2" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0cbf3727-e4b7-4686-b685-50d68573b039" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:/TransactionWSDLService/TransactionWSDLPort</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <wsc:TransactRequest>\r
+         <wsc:AccountNumber>?</wsc:AccountNumber>\r
+         <wsc:Sum>?</wsc:Sum>\r
+         <wsc:Target>?</wsc:Target>\r
+      </wsc:TransactRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/input2"/></con:call></con:operation></con:interface><con:mockService id="a3ea2573-fe56-4e80-9132-4449b88c9781" port="8088" path="/mockTransactionWSDLBinding" host="DESKTOP-SQODI7U" name="TransactionWSDLBinding MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="CheckAccount" id="93b8d6ad-1df9-4693-8671-26d36e80eec7" interface="TransactionWSDLBinding" operation="CheckAccount"><con:settings/><con:defaultResponse>Open</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>// Определяем namespace
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def holder = groovyUtils.getXmlHolder(mockRequest.getRequestContent())
+holder.declareNamespace("wsc", "http://bank/schema/WSCommonTypes")
+
+// Берём AccountNumber из входного сообщения
+def accountNumber = holder.getNodeValue("//wsc:CheckAccountRequest/wsc:AccountNumber")?.trim()
+
+// Возвращаем входное значение в ответе (используется как ${AccountNumber})
+context.AccountNumber = accountNumber
+
+// Выбираем ответ (Close, Blocked, Error, Open - названия ответов в SoapUI)
+if (accountNumber == "999999999") {
+    return "Close"
+}
+if (accountNumber == "777777777") {
+    return "Blocked"
+}
+if (accountNumber == "666666666") {
+    return "Error"
+}
+return "Open"</con:dispatchPath><con:response name="Open" id="81d9a4c9-13d8-4055-b9e1-a2a376ae8ce9" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsc:CheckAccountResponse>
+         <wsc:AccountNumber>${AccountNumber}</wsc:AccountNumber>
+         <wsc:Status>Open</wsc:Status>
+      </wsc:CheckAccountResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/output1"/></con:response><con:response name="Close" id="81d9a4c9-13d8-4055-b9e1-a2a376ae8ce9" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsc:CheckAccountResponse>
+         <wsc:AccountNumber>${AccountNumber}</wsc:AccountNumber>
+         <wsc:Status>Close</wsc:Status>
+      </wsc:CheckAccountResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/output1"/></con:response><con:response name="Blocked" id="81d9a4c9-13d8-4055-b9e1-a2a376ae8ce9" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsc:CheckAccountResponse>
+         <wsc:AccountNumber>${AccountNumber}</wsc:AccountNumber>
+         <wsc:Status>Blocked</wsc:Status>
+      </wsc:CheckAccountResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/output1"/></con:response><con:response name="Error" id="81d9a4c9-13d8-4055-b9e1-a2a376ae8ce9" httpResponseStatus="500" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>Ошибка</faultstring>
+         <detail>
+            <wsc:ErrorResponse>
+               <wsc:ErrorCode>911</wsc:ErrorCode>
+               <wsc:ErrorString>Ошибка</wsc:ErrorString>
+            </wsc:ErrorResponse>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/output1"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="Transact" id="d00c6ab1-bfb5-4186-b6eb-d7e6f8c812f2" interface="TransactionWSDLBinding" operation="Transact"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="11833011-2f47-45d7-bcdb-6522ed0366a4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsc="http://bank/schema/WSCommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsc:TransactResponse>
+         <wsc:TransactionId>?</wsc:TransactionId>
+         <wsc:TransactionStatus>?</wsc:TransactionStatus>
+      </wsc:TransactResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bank/TransactionWSDL/TransactionWSDLPortType/output2"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
