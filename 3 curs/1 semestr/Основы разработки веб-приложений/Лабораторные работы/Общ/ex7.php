@@ -1,0 +1,6 @@
+<?php
+$result = null;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { $names = $_POST['product'] ?? []; $prices = array_map('floatval', $_POST['price'] ?? []); $quantities = array_map('intval', $_POST['quantity'] ?? []); $selected = []; foreach ($prices as $i => $price) { $total = $price * ($quantities[$i] ?? 0); if ($total >= 20000 && $total <= 30000) $selected[] = [$names[$i] ?? '', $price, $quantities[$i] ?? 0, $total]; } $result = [$selected, array_sum($prices) / max(count($prices), 1)]; }
+?><!doctype html><meta charset="UTF-8"><title>Задание 7</title><h1>Задание 7</h1>
+<form method="post"><?php for ($i = 0; $i < 5; $i++): ?><input name="product[]" placeholder="Изделие <?= $i + 1 ?>" required><input name="price[]" type="number" step="any" placeholder="Стоимость" required><input name="quantity[]" type="number" min="0" placeholder="Количество" required><br><?php endfor; ?><button>Показать</button></form>
+<?php if ($result !== null): ?><p>Изделия на сумму от 20000 до 30000 руб.:</p><?php foreach ($result[0] as $item): ?><div><?= htmlspecialchars($item[0], ENT_QUOTES, 'UTF-8') ?> — <?= $item[3] ?> руб.</div><?php endforeach; ?><p>Средняя стоимость изделия: <?= number_format($result[1], 2, '.', '') ?> руб.</p><?php endif; ?>

@@ -1,0 +1,42 @@
+[
+    {
+        "number": 2,
+        "director": "Кузнецов Дмитрий Игоревич",
+        "classes": 12,
+        "students": 275,
+        "teachers": 27,
+        "rooms": 19
+    },
+    {
+        "number": 7,
+        "director": "Петров Александр Викторович",
+        "classes": 18,
+        "students": 430,
+        "teachers": 550,
+        "rooms": 25
+    },
+    {
+        "number": 18,
+        "director": "Иванова Елена Сергеевна",
+        "classes": 24,
+        "students": 612,
+        "teachers": 48,
+        "rooms": 32
+    },
+    {
+        "number": 24,
+        "director": "Волкова Марина Павловна",
+        "classes": 22,
+        "students": 548,
+        "teachers": 44,
+        "rooms": 29
+    },
+    {
+        "number": 31,
+        "director": "Смирнова Ольга Андреевна",
+        "classes": 30,
+        "students": 790,
+        "teachers": 61,
+        "rooms": 41
+    }
+]
