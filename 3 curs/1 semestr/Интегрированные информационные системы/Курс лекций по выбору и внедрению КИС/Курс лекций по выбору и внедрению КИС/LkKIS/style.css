@@ -1,0 +1,150 @@
+A:link {
+	TEXT-DECORATION: underline;
+	font-size: 12px;
+	font-weight: bold;
+	color: #263F5D;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+}
+A:visited {
+	COLOR: #263E5D;
+	TEXT-DECORATION: underline;
+	font-weight: bold;
+	font-size: 12px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+A:hover {
+	COLOR: #000066;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+A:active {
+	COLOR: #000066;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}	
+BODY {
+	SCROLLBAR-FACE-COLOR: #FAF1E1; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #000000; 
+	SCROLLBAR-SHADOW-COLOR: #ffffff; 
+	SCROLLBAR-3DLIGHT-COLOR: #929FB0; 
+	SCROLLBAR-ARROW-COLOR: #003A62; 
+	SCROLLBAR-TRACK-COLOR: #FFE6E6; 
+	SCROLLBAR-DARKSHADOW-COLOR: #993300;
+}	
+
+P {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 2px;
+	TEXT-INDENT: 1em;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: justify;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	font-family: Tahoma,Times New Roman,Arial, Helvetica, sans-serif;
+}
+
+
+
+H1 {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 2px;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: center;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	background: center;
+	text-align: center;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	
+}
+H2 {
+	font-size: 13px;
+	color: #000000;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	font-weight: bold;
+
+	right: 10px;
+	
+	
+	padding-left: 10px;
+	text-align: left;
+	TEXT-DECORATION: underline;
+}
+H3 {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 2px;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: center;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	font-family: Tahoma,Times New Roman,Arial, Helvetica, sans-serif;
+}
+
+H4 {
+	font-size: 12px;
+	color: #B7997D;
+	text-align: right;
+	padding-left: 250px;
+}
+H5 {
+	font-size: 12px;
+	color: #724A10;
+	font-family: Tahoma,Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	left: 5px;
+	top: 2px;
+	right: 10px;
+	bottom: 2px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	text-align: right;
+	
+}
+	
+ul
+{
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 15px;
+	TEXT-INDENT: 1em;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: justify;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	font-family: Tahoma,Times New Roman,Arial, Helvetica, sans-serif;
+	
+}
+
+
+ol
+{
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 15px;
+	TEXT-INDENT: 0em;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: justify;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	font-family: Tahoma,Times New Roman,Arial, Helvetica, sans-serif;
+	TYPE:I ;
+}
