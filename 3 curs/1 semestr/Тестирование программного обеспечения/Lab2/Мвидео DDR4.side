@@ -1,0 +1,238 @@
+{
+  "id": "mvideo-ddr4-automation",
+  "version": "2.0",
+  "name": "М.Видео — оперативная память DDR4",
+  "url": "https://www.mvideo.ru/",
+  "tests": [
+    {
+      "id": "test-mvideo-ddr4",
+      "name": "Выбор Владимира и добавление DDR4 в корзину",
+      "commands": [
+        {
+          "id": "open",
+          "comment": "Открыть главную страницу",
+          "command": "open",
+          "target": "https://www.mvideo.ru/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cookie-check",
+          "comment": "Проверить наличие уведомления о cookie",
+          "command": "storeElementPresent",
+          "target": "xpath=//button[normalize-space()=\"Отклонить\"]",
+          "targets": [],
+          "value": "cookieShown"
+        },
+        {
+          "id": "cookie-if",
+          "comment": "Закрыть уведомление, если оно появилось",
+          "command": "if",
+          "target": "${cookieShown}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cookie-dismiss",
+          "comment": "Отклонить необязательные cookie",
+          "command": "click",
+          "target": "xpath=//button[normalize-space()=\"Отклонить\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cookie-end",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-prompt-check",
+          "comment": "Проверить приглашение подтвердить определённый город",
+          "command": "storeElementPresent",
+          "target": "xpath=//*[contains(normalize-space(.), \"Ваш город\")]/following-sibling::button[normalize-space()=\"Нет\"]",
+          "targets": [],
+          "value": "cityPrompt"
+        },
+        {
+          "id": "city-prompt-if",
+          "comment": "Открыть выбор города из приглашения",
+          "command": "if",
+          "target": "${cityPrompt}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-no",
+          "comment": "Отказаться от предложенного города",
+          "command": "click",
+          "target": "xpath=//*[contains(normalize-space(.), \"Ваш город\")]/following-sibling::button[normalize-space()=\"Нет\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-else",
+          "comment": "Если приглашения нет, открыть выбор города в шапке",
+          "command": "else",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-button-wait",
+          "comment": "Ожидать кнопку текущего города",
+          "command": "waitForElementVisible",
+          "target": "css=button.header-location",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "city-button",
+          "comment": "Открыть выбор города",
+          "command": "click",
+          "target": "css=button.header-location",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-end",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-input-wait",
+          "comment": "Ожидать поле поиска города",
+          "command": "waitForElementVisible",
+          "target": "css=input[placeholder=\"Ваш город\"]",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "city-type",
+          "comment": "Найти Владимир",
+          "command": "type",
+          "target": "css=input[placeholder=\"Ваш город\"]",
+          "targets": [],
+          "value": "Владимир"
+        },
+        {
+          "id": "city-result-wait",
+          "comment": "Ожидать город Владимир в результатах",
+          "command": "waitForElementVisible",
+          "target": "xpath=//li[contains(@class,\"location-select__location\") and normalize-space(.)=\"г Владимир\"]",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "city-select",
+          "comment": "Выбрать город Владимир",
+          "command": "click",
+          "target": "xpath=//li[contains(@class,\"location-select__location\") and normalize-space(.)=\"г Владимир\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "city-confirm",
+          "comment": "Дождаться применения города",
+          "command": "waitForElementVisible",
+          "target": "xpath=//button[contains(@class,\"header-location\") and normalize-space(.)=\"Владимир\"]",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "catalog-wait",
+          "comment": "Ожидать каталог после обновления страницы",
+          "command": "waitForElementVisible",
+          "target": "css=button[aria-label=\"Каталог\"]",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "catalog-click",
+          "comment": "Открыть каталог",
+          "command": "click",
+          "target": "css=button[aria-label=\"Каталог\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "computers-wait",
+          "comment": "Ожидать раздел компьютеров",
+          "command": "waitForElementVisible",
+          "target": "xpath=//a[normalize-space(.)=\"Ноутбуки, планшеты, компьютеры\"]",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "computers-click",
+          "comment": "Открыть раздел ноутбуков, планшетов и компьютеров",
+          "command": "click",
+          "target": "xpath=//a[normalize-space(.)=\"Ноутбуки, планшеты, компьютеры\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "components-wait",
+          "comment": "Ожидать группу компьютерных комплектующих",
+          "command": "waitForElementVisible",
+          "target": "xpath=//a[normalize-space(.)=\"Компьютерные комплектующие\"]",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "memory-wait",
+          "comment": "Ожидать ссылку на оперативную память внутри группы комплектующих",
+          "command": "waitForElementVisible",
+          "target": "xpath=//a[@title=\"Оперативная память\"]",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "memory-click",
+          "comment": "Перейти в оперативную память",
+          "command": "click",
+          "target": "xpath=//a[@title=\"Оперативная память\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ddr4-wait",
+          "comment": "Ожидать первую карточку DDR4 с кнопкой добавления",
+          "command": "waitForElementVisible",
+          "target": "xpath=(//div[contains(concat(\" \",normalize-space(@class),\" \"),\" products-list \")]//a[@mvid-product-card][.//mvid-product-title[contains(.,\"DDR4\")] and .//button[normalize-space(.)=\"В корзину\"]])[1]//button[normalize-space(.)=\"В корзину\"]",
+          "targets": [],
+          "value": "20000"
+        },
+        {
+          "id": "ddr4-add",
+          "comment": "Добавить первую подходящую позицию в корзину",
+          "command": "click",
+          "target": "xpath=(//div[contains(concat(\" \",normalize-space(@class),\" \"),\" products-list \")]//a[@mvid-product-card][.//mvid-product-title[contains(.,\"DDR4\")] and .//button[normalize-space(.)=\"В корзину\"]])[1]//button[normalize-space(.)=\"В корзину\"]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "suite-mvideo",
+      "name": "М.Видео",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "test-mvideo-ddr4"
+      ]
+    }
+  ],
+  "urls": [
+    "https://www.mvideo.ru/"
+  ],
+  "plugins": []
+}
